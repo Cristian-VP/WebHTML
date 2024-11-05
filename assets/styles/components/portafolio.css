@@ -1,0 +1,38 @@
+body{
+    font-family: Itim, cursive;
+    background: #e8e8e8;
+   
+}
+
+h1{
+    font-size: 5rem;
+    
+}
+p {
+    font-size: x-large;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 580px;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+
+}
+.menu li a:hover{
+    background: #ef8354;
+}
