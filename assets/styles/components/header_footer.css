@@ -1,0 +1,7 @@
+
+header{
+    display: inline-block;
+    width: 480px;
+    height: 64px;
+    background-color: var(--color-detalle-verde);
+}

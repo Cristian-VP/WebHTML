@@ -1,0 +1,19 @@
+@import url(components/header_footer.css);
+
+:root{
+    --color-fondo: FFFCF2;
+    --color-detalle-verde: DDFB32;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-fondo);
+}
+
+
+
