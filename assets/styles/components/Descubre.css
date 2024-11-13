@@ -1,0 +1,137 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #4a90e2;
+    color: white;
+    width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Contenedor */
+.container {
+    display: flex;
+    gap: 15px; /* Reducimos el espacio entre tarjetas */
+    margin: 40px 20px;
+    max-width: 1200px; /* Ajuste del ancho máximo */
+    flex-wrap: nowrap; /* Evita que las tarjetas salten a la siguiente línea */
+    justify-content: center;
+}
+
+/* Estilo de tarjeta */
+.card {
+    width: 30%; /* Hacemos las tarjetas más pequeñas para que entren tres en una fila */
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen */
+.card img {
+    width: 100%;
+    height: 200px; /* Reducimos la altura para ajustarse al nuevo tamaño */
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Contenido */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    font-size: 1.8em;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilo del pie de página */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-top: 1px solid #ddd;
+}
+
+/* Animación suave para hover en enlaces de pie de página */
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap; /* Permite que las tarjetas salten a la siguiente línea en pantallas más pequeñas */
+    }
+
+    .card {
+        width: 45%; /* Ajuste para tabletas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%; /* Ajuste para dispositivos móviles */
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .card img {
+        height: 150px; /* Reducir altura en móviles */
+    }
+}
