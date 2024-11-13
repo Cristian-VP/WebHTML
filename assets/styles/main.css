@@ -1,8 +1,8 @@
-@import url(components/header_footer.css);
+@import url("components/header_footer.css");
 
 :root{
-    --color-fondo: FFFCF2;
-    --color-detalle-verde: DDFB32;
+    --color-fondo: #FFFCF2;
+    --color-detalle-verde: #DDFB32;
 }
 
 *{

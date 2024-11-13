@@ -1,7 +1,39 @@
+@import url(../main.css);
 
-header{
-    display: inline-block;
-    width: 480px;
-    height: 64px;
-    background-color: var(--color-detalle-verde);
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.125rem;
+    padding: 1rem;
+    background-color: lightpink;
+
+    border-bottom: 4px solid black;
 }
+
+/* Reglas comportamiento físico*/
+#logo-container{
+    margin-left: 0.5rem;
+    display: inline-block;
+    background-color: lightgreen;
+}
+
+#pages-container{
+    background-color: lightseagreen;
+    /*padding: 0.5rem;*/
+    width: 50rem;
+}
+
+#pages-container ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#pages-container ul li{
+    flex-grow: 1;
+    background-color: lightcyan;
+}
+
+/*Reglas específicas*/
