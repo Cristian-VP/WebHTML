@@ -13,6 +13,10 @@ nav{
 }
 
 /* Reglas comportamiento físico*/
+.hamburger{
+    display: none;
+}
+
 #logo-container{
     margin-left: 0.5rem;
     display: inline-block;
@@ -21,7 +25,6 @@ nav{
 
 #pages-container{
     background-color: lightseagreen;
-    /*padding: 0.5rem;*/
     width: 50rem;
 }
 
@@ -34,6 +37,96 @@ nav{
 #pages-container ul li{
     flex-grow: 1;
     background-color: lightcyan;
+    text-align: center ;
 }
 
 /*Reglas específicas*/
+#pages-container ul li{
+   list-style: none;
+}
+
+#logo-container a, #pages-container ul li a{
+    text-decoration: none;
+    color: black;
+}
+#logo-container a{
+    font-size: 1.5rem;
+}
+
+#pages-container ul li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+    text-underline-offset: 0.3rem;
+    transition: 3s ease;
+}
+
+@media (max-width: 1024px){
+    /* Reglas comportamiento físico*/
+
+    #pages-container{
+        display: none;
+    }
+
+    /* Estilo del ícono de hamburguesa usando una lista */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+    }
+    .hamburger ul {
+
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20px;
+        width: 30px;
+    }
+
+    .hamburger ul li {
+        background-color: black;
+        height: 4px;
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    /* Al hacer clic en el ícono de hamburguesa, mostrar el menú */
+    .hamburger.active ul li:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 6px;
+    }
+
+    .hamburger.active ul li:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active ul li:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -6px;
+    }
+
+    /* Mostrar el menú al hacer clic */
+    .hamburger.active + #pages--container ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.125rem; /* Asegura que el menú se abra debajo del navbar */
+        left: 0;
+        right: 0;
+        background-color: lightseagreen;
+        padding: 1rem;
+    }
+
+    #pages-container ul li {
+        text-align: left;
+        padding: 0.5rem;
+    }
+}
