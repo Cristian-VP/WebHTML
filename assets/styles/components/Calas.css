@@ -1,0 +1,122 @@
+/* Dentro de esta etiqueta utilizamos un  background-color
+para darle un color de fondo a nuestra página web
+y utilizamos font-family para darle un mejor estilo a las letras*/
+
+body {
+    background-color: #f5f5f5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Utilizamos un display flex para alinear y distribuir los elementos 
+dentro de un contenedor de manera eficiente, align-items para centrar
+mejor todo el contenido dentro de este, padding y margin para mejorar
+la ubicación de todo el conenedor */
+
+.container01 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin: 3.5rem 3.5rem;
+}
+
+/*Utilizamos width y height para darle un tamaño ideal a la imagen 
+box-shadow para darle un sombreado bien oscuro al rededor de la imagen y
+border-radius para darle un estilo diferente a nuestras imagenes*/
+
+.container01 img {
+    width: 34rem;
+    height: 40rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
+    border-radius: 90px 0 90px 0;
+}
+
+/* Aquí utilizamos hover para darle a nuestra imagen un ligero efecto
+de movimiento y color al parsar el cursos por encima de esta, tambien
+un ligero estilo a dicho cursor */
+
+.container01 img:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 4);
+    transform: translateY(-3%);
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+/*Al parrafo del container01 le dimos un padding para ajustar
+la hubicación de estey un tamaño más atractivo*/
+
+.container01 p {
+    padding: 0 10rem 0 10rem;
+    font-size: 1.7rem;
+}
+
+/* Metimos al parrafo y al título dentro de un articule y le dimos un 
+text-shadow para embellecer el texto*/
+.textos {
+    flex-direction: column;
+    text-shadow: 0.2rem 0.3rem 0.3rem blueviolet;
+}
+
+/*Al título lo picicionamos bien con margin-left y ajustamos su tamaño*/
+.textos h1 {
+    margin-left: 9.8rem;
+    font-size: 2.7rem;
+}
+
+/*Utilizamos una etiqueta no semántica para crear una linea que divida los containers y le dimos un color*/
+
+.line {
+    padding: 1px;
+    background-color: #363636;
+}
+
+/*De aquí en adelante utilizamos @media para ajustar la página web a diferentes tamaños
+de dispositivos*/
+
+/* Media query para pantallas medianas*/
+@media (max-width: 1024px) {
+    .container01 {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .container01 img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .container01 p {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    .textos h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* Media query para pantallas pequeñas*/
+@media (max-width: 600px) {
+    .container01 {
+        padding: 0 10px;
+        margin: 1rem;
+    }
+
+    .container01 img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    .container01 p {
+        padding: 0;
+        font-size: 0.9rem;
+    }
+
+    .textos h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+}

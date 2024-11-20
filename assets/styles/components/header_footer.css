@@ -1,5 +1,9 @@
 @import url(../main.css);
 
+body{
+
+
+}
 nav{
     display: flex;
     flex-direction: row;
@@ -10,11 +14,19 @@ nav{
     background-color: lightpink;
 
     border-bottom: 4px solid black;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Reglas comportamiento físico*/
 .hamburger{
     display: none;
+}
+
+nav{
+
 }
 
 #logo-container{
@@ -62,71 +74,46 @@ nav{
 
 @media (max-width: 1024px){
     /* Reglas comportamiento físico*/
-
     #pages-container{
         display: none;
     }
-
-    /* Estilo del ícono de hamburguesa usando una lista */
-    .hamburger {
+    .hamburger{
         display: block;
-        cursor: pointer;
-        background: transparent;
-        border: none;
-        padding: 0;
-        width: 30px;
-        height: 30px;
+        background-color: lightgreen;
+        width: 3.5rem;
+        height: 3.5rem;
+        position: relative;
     }
-    .hamburger ul {
-
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 20px;
-        width: 30px;
-    }
-
-    .hamburger ul li {
-        background-color: black;
-        height: 4px;
+    .hamburger span{
+        display: inline-block;
         width: 100%;
-        transition: all 0.3s ease;
+        height: 0.5em;
+        background-color: black;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
     }
 
-    /* Al hacer clic en el ícono de hamburguesa, mostrar el menú */
-    .hamburger.active ul li:nth-child(1) {
-        transform: rotate(45deg);
-        position: relative;
-        top: 6px;
+    .hamburger.active span:nth-of-type(1) {
+        transform: rotate(45deg) translateY(12px) translateX(11px);
+
+
+    }
+    .hamburger.active span:nth-of-type(2) {
+        background-color: transparent;
     }
 
-    .hamburger.active ul li:nth-child(2) {
-        opacity: 0;
+    .hamburger.active span:nth-of-type(3) {
+        transform: rotate(-45deg) translateY(-13px) translateX(12px);
     }
 
-    .hamburger.active ul li:nth-child(3) {
-        transform: rotate(-45deg);
-        position: relative;
-        top: -6px;
-    }
-
-    /* Mostrar el menú al hacer clic */
-    .hamburger.active + #pages--container ul {
-        display: flex;
-        flex-direction: column;
+    .hamburger.active + #pages-container {
         position: absolute;
-        top: 4.125rem; /* Asegura que el menú se abra debajo del navbar */
-        left: 0;
+        display: block;
+        width: 20rem;
+        height: 60rem;
+        background-color: lightcyan;
+        top:70px;
         right: 0;
-        background-color: lightseagreen;
-        padding: 1rem;
     }
 
-    #pages-container ul li {
-        text-align: left;
-        padding: 0.5rem;
-    }
 }
