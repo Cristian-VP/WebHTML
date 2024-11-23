@@ -1,0 +1,29 @@
+@import url("components/header_footer.css");
+@import url("components/Descubre.css");
+@import url("components/Calas.css");
+@import url("components/Emplematicos.css");
+@import url("components/Gastronomia.css");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary: #FFFCF2;
+    --color-text-general: black;
+}
+/* Dentro de esta etiqueta utilizamos un  background-color
+para darle un color de fondo a nuestra página web
+y utilizamos font-family para darle un mejor estilo a las letras*/
+
+body {
+    background-color: var(--primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
