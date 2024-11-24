@@ -1,0 +1,86 @@
+/* Comportamiento físico footer */
+    footer {
+        /*background-color: darkseagreen;*/
+        margin-top: 6rem;
+        width: 100%;
+        height: 19vh;
+        border-top: 4px solid black;
+        padding: 1rem;
+
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        flex-direction: row;
+    }
+
+    address, #redes-footer{
+        flex-grow: 1;
+    }
+
+    /*Bloque izquierda nombre empresa y datos de contácto*/
+    #empresa-footer{
+        margin-bottom: 1em;
+    }
+    #contacto-footer li{
+        margin-bottom: 1em;
+        margin-left: 1em;
+    }
+
+    #contacto-footer li a i{
+        width: 1em;
+        text-align: center;
+        margin-right: 0.5em;
+        color: var(--color-green-letter);
+    }
+
+    /*Bloque derecha redes sociales*/
+    #redes-footer{
+        text-align: right;
+    }
+    #redes-footer ul{
+        height: 13vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #redes-footer ul li i{
+        margin-left: 0.5em;
+    }
+
+
+/*Comportamiento y aspecto individuañ*/
+    #empresa-footer p:nth-child(1){
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    #empresa-footer p:nth-child(2){
+        font-size: 0.9rem;
+    }
+
+    #contacto-footer, #redes-footer ul {
+        list-style: none;
+    }
+    #contacto-footer li a{
+        text-decoration: none;
+        color: var(--color-text-general);
+    }
+    #contacto-footer li a:hover{
+        text-decoration: underline;
+        transition:underline 0.4s ease-in-out;
+    }
+
+    #redes-footer li a{
+        text-decoration: none;
+        color: var(--color-text-general);
+    }
+
+    #redes-footer li a:hover{
+        color: var(--color-green-letter);
+        transition: all 0.3s ease-out;
+    }
+
+    @media (max-width: 768px){
+        /*  */
+    }
