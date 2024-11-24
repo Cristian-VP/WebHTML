@@ -8,7 +8,7 @@
         padding: 1rem;
 
         display: flex;
-        position: absolute;
+       /* position: absolute;*/
         bottom: 0;
         flex-direction: row;
     }

@@ -1,3 +1,5 @@
+@import url("components/header.css");
+@import url("components/footer.css");
 /*Dentro de esta etiqueta utilizamos un  background-color
 para darle un color de fondo a nuestra página web
 y utilizamos font-family para darle un mejor estilo a las letras*/
