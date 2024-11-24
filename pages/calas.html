@@ -1,168 +1,150 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+
 <head>
-    <!-- Metas -->
+    <!-- Metadatos -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Descubre Mallorca de una manera única en nuestro blog y además puedes contactar con nosotros si ves algo que te gusta. Mallorca al alcance de tus manos">
-    <meta name="keywords" content="mallorca,blog,turismo,calas,comida,visitas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre Mallorca de una manera única en nuestro blog y contacta con nosotros si algo te interesa. Mallorca al alcance de tus manos.">
+    <meta name="keywords" content="mallorca, blog, turismo, calas, comida, visitas">
     <meta name="author" content="Grupo IFCW33 Borja Moll">
-    <!-- Link  -->
+    <title>Calas de Mallorca</title>
+
+    <!-- Enlaces CSS -->
     <link rel="stylesheet" href="../assets/styles/main.css">
-    <link rel="icon" href="../assets/icons/favicon_norte-sur_48x48.svg" type="image/svg" sizes="any">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Import iconos de Fontawesome  -->
+    <link rel="icon" href="../assets/icons/favicon_norte-sur_48x48.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome para iconos -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
-    <title>Calas</title> <!--Con esta etiqueta elegimos el título-->
 </head>
 
-<body> <!--Dentro de esta etiqueta esta la mayoría del contenido visible-->
-    <!-- Navegador  -->
+<body>
+    <!-- Cabecera -->
     <header>
-    <nav>
-        <div id="logo-container">
-            <a href="index.html" title="Ir al inicio">DE NORTE A SUR</a>
-        </div>
-        <!-- Menú hamburguesa -->
-        <button class="hamburger" onclick="this.classList.toggle('active')">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <!-- Menú -->
-        <div id="pages-container" >
-            <ul class="menu-container">
-                <li><a href="#">DESCUBRE</a></li>
-                <li><a href="#about">CONTÁCTA</a></li>
-                <li><a href="#services">CONOCENOS</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-    <main>
-        <!-- Creamos un section con una clase "container01" para encerrar todo el contenido y luego darle un estilo
-         un article con la clase textos para encerrar el parrafo (etiqueta p) y el titulo (etiqueta h1) y darle un css más personalisado y
-         hemos instalado una imagen dentro de la etiqueta semántica picture utilizando la etiqueta img-->
-        <section class="container01">
-            <article class="textos">
-                <h1>Cala mondragó</h1>
-                <p>
-                    Cuando algunos amigos vienen a visitarnos a Mallorca y preguntan dónde ir a la playa, Cala Mondragó es
-                    siempre una de las primeras respuestas. Es una playa mallorquina casi caribeña situada en la costa este
-                    de la isla, no lejos de Cala des Moro y a una hora en coche de Palma. Bandera azul, dunas de arena y un
-                    inmenso pinar alrededor: cada vez que pasas por Mondragò te sientes un poco en el paraíso.
-                </p>
-            </article>
-
-            <picture>
-                <img src="../assets/images/calas_page/cala-mondrago_santanyi.jpg">
-            </picture>
-        </section>
-        <!-- hemos creado un div para crear una ligera linea que separará cada section-->
-        <div class="line"></div>
-
-        <section class="container01">
-            <picture>
-                <img src="../assets/images/calas_page/cala-des-moro_santanyi.jpg" alt="Cala des Moro">
-            </picture>
-            <div class="textos">
-                <h1>Cala des Moro</h1>
-                <p>
-                    ¡Descubre Cala Morro, un verdadero rincón paradisíaco en la exclusiva costa sureste de Mallorca! Este
-                    escondite natural, rodeado de majestuosos acantilados y vegetación mediterránea, presume de aguas
-                    cristalinas en tonos turquesa que no podrás encontrar en ningún otro lugar. Cala Morro ofrece la
-                    privacidad y el encanto de una cala secreta, perfecta para disfrutar del mar, nadar o explorar un mundo
-                    submarino de ensueño.
-                </p>
+        <nav>
+            <div id="logo-container">
+                <a href="index.html" title="Ir al inicio">DE NORTE A SUR</a>
             </div>
-        </section>
+            <!-- Menú hamburguesa -->
+            <button class="hamburger" onclick="this.classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Menú de navegación -->
+            <div id="pages-container">
+                <ul class="menu-container">
+                    <li><a href="#">DESCUBRE</a></li>
+                    <li><a href="#about">CONTÁCTANOS</a></li>
+                    <li><a href="#services">CONÓCENOS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-        <div class="line"></div>
-
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Cala Mondragó -->
         <section class="container01">
-            <article class="textos">
-                <h1>Cala Salmunia</h1>
-
-                <p>
-                    Esta cala es un pequeño entrante de mar perteneciente al municipio de Santanyí y cuyas rampas usan los
-                    bañistas para lanzarse a refrescarse. 
-                    El fondo del agua es de arena con pequeñas rocas aisladas y la cala cuenta solamente con 30 metros de
-                    longitud, mientras que la zona rocosa solo llega a los 10 metros de ancho.
-                    La pureza de sus aguas color turquesa invitar a darse un buen chapuzón, mientras que las rocas planas
-                    que se encuentran a lo largo de la cala son muy apetecibles para darse un baño de sol.
-                </p>
-            </article>
-            <picture>
-
-                <img src="../assets/images/calas_page/cala-salmunia-llombards.webp" alt="Cala Salmunia">
-            </picture>
-        </section>
-
-        <div class="line"></div>
-
-        <section class="container01">
-            <picture>
-                <img src="../assets/images/calas_page/cala-marlmol_santanyi.webp" alt=" Cala Marmol">
-            </picture>
-            <article class="textos">
-                <h1>Cala Marmol</h1>
-                <p>
-                    Cala Marmols es un lugar tranquilo y solitario para relajarte y disfrutar de la belleza natural del
-                    paisaje costero de Mallorca. Si buscas un sitio verdaderamente paradisíaco alejado de toda civilización
-                    y de una belleza impresionante definitivamente debes visitar Cala Marmols.
-                    Prepárate para descubrir Cala Marmols, un lugar extraordinario y singular, sin nada construido y rodeado
-                    de acantilados. Un oasis de agua cristalina en medio de la naturaleza con una playa de arena y grava.
-                </p>
-            </article>
-        </section>
-
-    </main>
-        <!-- Footer -->
-        <footer>
-            <!-- Contacto de la empresa -->
-            <address>
-                <div id="empresa-footer">
+            <div class="block">
+                <picture>
+                    <img src="../assets/images/calas_page/cala-mondrago_santanyi.jpg" alt="Cala Mondragó">
+                </picture>
+                <div class="textos">
+                    <h1>Cala Mondragó</h1>
                     <p>
-                        <em>DE NORTE A SUR</em>
-                    </p>
-                    <p>
-                        <strong><i>haz algo increible</i></strong>
+                        Cala Mondragó es una playa mallorquina casi caribeña situada en la costa este de la isla. Con bandera azul, dunas de arena y un inmenso pinar, cada visita te transporta a un paraíso único.
                     </p>
                 </div>
-                <ul id="contacto-footer">
-                    <li>
-                        <a id="mail" href="mailto:info@nortesur.es" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i>Contact us</a>
-                    </li>
-                    <li>
-                        <a id="phone" href="tel:+633548978" target="_blank"><i class="fa-solid fa-phone fa-xl"></i>Call us</a>
-                    </li>
-                    <li>
-                        <a id="localitation" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x129793b01716a01b:0x55bc574de040df4a%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwittbPCke6JAxVHTaQEHY_NCrIQ4kB6BAg-EAM&usg=AOvVaw2FU91ag2-M24lRvROwiYyQ"><i class="fa-solid fa-location-dot fa-xl"></i>Find us</a>
-                    </li>
-                </ul>
-            </address>
-            <!-- Redes sociales -->
-            <div id="redes-footer">
-                <p><strong>Encuentranos en:</strong></p>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
-                    </li>
-                </ul>
             </div>
-        </footer>
-    <!-- Fin Footer -->
+        </section>
+
+        <div class="line"></div>
+
+        <!-- Sección Cala des Moro -->
+        <section class="container01">
+            <div class="block">
+                <picture>
+                    <img src="../assets/images/calas_page/cala-des-moro_santanyi.jpg" alt="Cala des Moro">
+                </picture>
+                <div class="textos">
+                    <h1>Cala des Moro</h1>
+                    <p>
+                        ¡Un rincón paradisíaco en la costa sureste de Mallorca! Rodeada de majestuosos acantilados y aguas cristalinas, es el lugar perfecto para nadar y explorar un mundo submarino de ensueño.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <!-- Sección Cala S'Almunia -->
+        <section class="container01">
+            <div class="block">
+                <picture>
+                    <img src="../assets/images/calas_page/cala-salmunia-llombards.webp" alt="Cala S'Almunia">
+                </picture>
+                <div class="textos">
+                    <h1>Cala S'Almunia</h1>
+                    <p>
+                        Este pequeño entrante de mar, ideal para bañistas, ofrece aguas turquesa y rocas perfectas para tomar el sol. Su tamaño compacto y belleza natural la hacen imprescindible.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <!-- Sección Cala Marmols -->
+        <section class="container01">
+            <div class="block">
+                <picture>
+                    <img src="../assets/images/calas_page/cala-marlmol_santanyi.webp" alt="Cala Marmols">
+                </picture>
+                <div class="textos">
+                    <h1>Cala Marmols</h1>
+                    <p>
+                        Cala Marmols es un lugar tranquilo y solitario rodeado de naturaleza virgen. Con una playa de arena y grava, es el destino perfecto para desconectar en un entorno paradisíaco.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <address id="empresa-footer">
+            <p><em>DE NORTE A SUR</em></p>
+            <p><strong><i>Haz algo increíble</i></strong></p>
+            <ul id="contacto-footer">
+                <li>
+                    <a id="mail" href="mailto:info@nortesur.es" target="_blank">
+                        <i class="fa-solid fa-envelope fa-xl"></i>Contact us
+                    </a>
+                </li>
+                <li>
+                    <a id="phone" href="tel:+633548978" target="_blank">
+                        <i class="fa-solid fa-phone fa-xl"></i>Call us
+                    </a>
+                </li>
+                <li>
+                    <a id="localitation" href="https://www.google.com/maps" target="_blank">
+                        <i class="fa-solid fa-location-dot fa-xl"></i>Find us
+                    </a>
+                </li>
+            </ul>
+        </address>
+        <div id="redes-footer">
+            <p><strong>Encuéntranos en:</strong></p>
+            <ul>
+                <li><a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a></li>
+                <li><a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a></li>
+                <li><a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>

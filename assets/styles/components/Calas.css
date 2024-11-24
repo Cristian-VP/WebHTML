@@ -1,116 +1,109 @@
-@import url("components/header.css");
-@import url("components/footer.css");
-
-
-/*Utilizamos un display flex para alinear y distribuir los elementos 
-dentro de un contenedor de manera eficiente, align-items para centrar
-mejor todo el contenido dentro de este, padding y margin para mejorar
-la ubicación de todo el conenedor */
-
+/* Contenedor principal */
 .container01 {
     display: flex;
-    align-items: center;
-    padding: 0 20px;
-    margin: 3.5rem 3.5rem;
+    flex-wrap: wrap; /* Permite que los bloques se ajusten si no hay suficiente espacio */
+    gap: 2rem; /* Espaciado entre bloques */
+    margin: 3rem auto; /* Centrado del contenedor */
+    max-width: 1200px; /* Controla el ancho máximo */
+    justify-content: center; /* Centra los elementos */
 }
 
-/*Utilizamos width y height para darle un tamaño ideal a la imagen 
-box-shadow para darle un sombreado bien oscuro al rededor de la imagen y
-border-radius para darle un estilo diferente a nuestras imagenes*/
-
-.container01 img {
-    width: 34rem;
-    height: 40rem;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
-    border-radius: 90px 0 90px 0;
+/* Bloques individuales (imagen + texto) */
+.block {
+    display: flex;
+    align-items: center; /* Centra verticalmente el texto con la imagen */
+    gap: 1.5rem; /* Espaciado entre imagen y texto */
+    max-width: 600px; /* Evita que los bloques sean demasiado anchos */
+    flex-wrap: wrap; /* Asegura que el texto se ajuste debajo de la imagen si es necesario */
 }
 
-/* Aquí utilizamos hover para darle a nuestra imagen un ligero efecto
-de movimiento y color al parsar el cursos por encima de esta, tambien
-un ligero estilo a dicho cursor */
-
-.container01 img:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 4);
-    transform: translateY(-3%);
-    transition: all 400ms ease;
-    cursor: pointer;
+/* Imagen */
+.block img {
+    width: 10rem; /* Tamaño fijo para mantener consistencia */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*Al parrafo del container01 le dimos un padding para ajustar
-la hubicación de estey un tamaño más atractivo*/
-
-.container01 p {
-    padding: 0 10rem 0 10rem;
-    font-size: 1.7rem;
+.block img:hover {
+    transform: scale(1.05); /* Efecto suave de aumento */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Metimos al parrafo y al título dentro de un articule*/
-.textos {
+/* Texto */
+.block .textos {
+    flex: 1; /* Ocupa el espacio restante al lado de la imagen */
+    display: flex;
     flex-direction: column;
-    
+    gap: 0.5rem;
+    text-align: justify;
 }
 
-/*Al título lo picicionamos bien con margin-left y ajustamos su tamaño*/
-.textos h1 {
-    margin-left: 9.8rem;
-    font-size: 2.7rem;
+.block .textos h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
 }
 
-/*Utilizamos una etiqueta no semántica para crear una linea que divida los containers y le dimos un color*/
+.block .textos p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}
 
+/* Línea divisoria */
 .line {
-    padding: 1px;
-    background-color: #363636;
+    width: 100%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 2rem 0;
 }
 
-/*De aquí en adelante utilizamos @media para ajustar la página web a diferentes tamaños
-de dispositivos*/
+/* Responsividad */
 
-/* Media query para pantallas medianas*/
+/* Para pantallas medianas (tabletas) */
 @media (max-width: 1024px) {
     .container01 {
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem;
+        gap: 1.5rem;
     }
 
-    .container01 img {
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
+    .block {
+        max-width: 90%; /* Ajusta el tamaño de los bloques */
     }
 
-    .container01 p {
-        padding: 0;
-        font-size: 1rem;
+    .block img {
+        width: 8rem; /* Reduce el tamaño de la imagen */
     }
 
-    .textos h1 {
-        text-align: center;
-        margin: 0 auto;
+    .block .textos h1 {
+        font-size: 1.3rem;
+    }
+
+    .block .textos p {
+        font-size: 0.9rem;
     }
 }
 
-/* Media query para pantallas pequeñas*/
+/* Para pantallas pequeñas (móviles) */
 @media (max-width: 600px) {
-    .container01 {
-        padding: 0 10px;
-        margin: 1rem;
+    .block {
+        flex-direction: column; /* Imagen y texto uno debajo del otro */
+        text-align: center; /* Centra los textos */
     }
 
-    .container01 img {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-    }
-
-    .container01 p {
-        padding: 0;
-        font-size: 0.9rem;
-    }
-
-    .textos h1 {
-        text-align: center;
+    .block img {
+        width: 100%; /* Imagen ocupa todo el ancho disponible */
+        max-width: 300px;
         margin: 0 auto;
+    }
+
+    .block .textos h1 {
+        font-size: 1.2rem;
+    }
+
+    .block .textos p {
+        font-size: 0.9rem;
     }
 }
