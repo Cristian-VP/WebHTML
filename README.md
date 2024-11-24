@@ -17,36 +17,49 @@ WebHTML/
 ├── robots.txt       # Arxiu per gestionar l'indexació dels motors de cerca
 
 
-Tecnologies utilitzades
-HTML5: Per a l'estructura semàntica de la web.
-CSS3: Per al disseny visual, incloent responsivitat.
 
-Altres eines:
-Optimització d'imatges: TinyPNG o ImageOptim.
-Editor de codi: Visual Studio Code.
-Gestió de versions: Git i GitHub.
-Figma: Utilitzat per al disseny previ i la planificació de la interfície d'usuari.
-Característiques i funcionalitats principals
-Disseny modular: Utilitza components reutilitzables per facilitar el manteniment.
-Responsivitat: La web està optimitzada per a diferents dispositius (mòbil, tauleta, escriptori).
-Pàgina 404 personalitzada: Millora l'experiència d'usuari en cas d'enllaços trencats.
-Gestió d'indexació: L'arxiu robots.txt controla les pàgines indexades pels motors de cerca.
-Scripts optimitzats: Funcionalitats interactives implementades amb JavaScript.
-Captures de pantalla
-Versió d'escriptori
-Afegeix aquí les captures d'escriptori.
+---
 
-Home:
-Contacte:
-Versió mòbil
-Afegeix aquí les captures de mòbil.
+## **Tecnologies Utilitzades**
+1. **HTML5**: Per a l'estructura semàntica de la web.
+2. **CSS3**: Per al disseny visual, incloent responsivitat.
 
-Home:
-Contacte:
+### **Altres Eines**:
+- **Optimització d'imatges**: TinyPNG o ImageOptim.
+- **Editor de codi**: Visual Studio Code.
+- **Gestió de versions**: Git i GitHub.
+- **Figma**: Utilitzat per al disseny previ i la planificació de la interfície d'usuari.
 
-Divisió de tasques entre els membres del grup
-Membre 1: 
-Membre 2: 
-Membre 3: 
-Membre 4: 
+---
+
+## **Característiques i Funcionalitats Principals**
+- **Disseny Modular**: Components reutilitzables per facilitar el manteniment.
+- **Responsivitat**: Optimitzada per a dispositius mòbils, tauletes i escriptoris.
+- **Pàgina 404 Personalitzada**: Millora l'experiència d'usuari en cas d'enllaços trencats.
+- **Gestió d'Indexació**: Control de pàgines indexades pels motors de cerca mitjançant l'arxiu `robots.txt`.
+- **Scripts Optimitzats**: Funcionalitats interactives implementades amb JavaScript.
+
+---
+
+## **Captures de Pantalla**
+### **Versió d'Escriptori**
+1. **Home**: *Afegeix aquí una captura.*
+2. **Contacte**: *Afegeix aquí una captura.*
+
+### **Versió Mòbil**
+1. **Home**: *Afegeix aquí una captura.*
+2. **Contacte**: *Afegeix aquí una captura.*
+
+---
+
+## **Divisió de Tasques entre els Membres del Grup**
+1. **Membre 1**: *Descripció de tasques.*
+2. **Membre 2**: *Descripció de tasques.*
+3. **Membre 3**: *Descripció de tasques.*
+4. **Membre 4**: *Descripció de tasques.*
+
+---
+
+
+
 
