@@ -22,7 +22,7 @@
     <header>
         <nav>
             <div id="logo-container">
-                <a href="index.html" title="Ir al inicio">DE NORTE A SUR</a>
+                <a href="index.html" title="Ir al inicio">NORTE A SUR</a>
             </div>
             <!-- Menú hamburguesa -->
             <button class="hamburger" onclick="this.classList.toggle('active')">
@@ -33,9 +33,10 @@
             <!-- Menú -->
             <div id="pages-container" >
                 <ul class="menu-container">
-                    <li><a href="#" target="_self">DESCUBRE</a></li>
-                    <li><a href="#about" target="_self">CONTÁCTA</a></li>
-                    <li><a href="#services" target="_self">CONOCENOS</a></li>
+                    <li id="arrow-home"><a href="index.html" target="_top"><img src="assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                    <li><a href="pages/descubre.html" target="_self">DESCUBRE</a></li>
+                    <li><a href="404.html" target="_self">CONTÁCTA</a></li>
+                    <li><a href="404.html" target="_self">CONOCENOS</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,7 +44,34 @@
 <!-- Fin Navegador  -->
 <!-- Main -->
     <main>
-
+        <section id="video-home">
+            <video autoplay muted loop id="myVideo">
+                <source alt="Man swiming in the mid ocean" src="assets/video/coverr-a-man-swimming-near-to-the-mid-ocean-ridge-6042-1080p.mp4" type="video/mp4" >
+            </video>
+        </section>
+        <section>
+            <article id="encuentra-container">
+                <picture></picture>
+                <div class="line-section-home"></div>
+                <div>
+                    <p>Mallorca es más que un destino: es una experiencia. Acompáñanos en este recorrido por rincones inolvidables, sabores auténticos y momentos especiales que solo aquí pueden vivirse. </p>
+                    <button class="button-pages" type="button" onclick="location.href='pages/descubre.html'">
+                        Encuentra tu destino
+                    </button>
+                </div>
+            </article>
+            <article id="contacta-container">
+                <picture></picture>
+                <div class="line-section-home"></div>
+                <div>
+                    <p>Si buscas más que un viaje<br>
+                        Quieres descubrir más</p>
+                    <button class="button-pages" type="button" onclick="location.href='404.html'">
+                        Contácta
+                    </button>
+                </div>
+            </article>
+        </section>
     </main>
 <!-- Fin Main -->
 <!-- Footer -->
