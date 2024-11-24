@@ -1,65 +1,61 @@
-# Projecte WebHTML
+# Projecte De Norte a Sur
+
+De norte a sur es un blog-agencia en el que pretendemos dar a conocer rincones únicos de Mallorca y que si el usuario le    
+gusta pueda contactar con nosotros a través de un futuro formulario.
 
 ## Estructura de carpetes i arxius
 
-WebHTML/
-├── assets/
-│   ├── images/      # Imatges utilitzades al projecte
-│   ├── styles/      # Fulls d'estil CSS
-│   └── fonts/       # Fonts personalitzades
-├── components/      # Components HTML reutilitzables (com headers o footers)
-├── js/              
-├── pages/           # Pàgines HTML secundàries (ex: about.html, contact.html)
-├── tests/           # Arxius de proves (unit tests o end-to-end tests)
-├── 404.html         # Pàgina d'error 404 personalitzada
-├── README.md        # Documentació del projecte
-├── index.html       # Pàgina principal de la web
-├── robots.txt       # Arxiu per gestionar l'indexació dels motors de cerca
+            WebHTML/
+            ├── assets/
+            │   ├── images/      # Imatges utilitzades al projecte
+            │   ├── styles/      # Fulls d'estil CSS
+            │   └── fonts/       # Fonts personalitzades
+            ├── components/      # Components HTML reutilitzables (com headers o footers)
+            ├── js/              
+            ├── pages/           # Pàgines HTML secundàries (ex: about.html, contact.html)
+            ├── tests/           # Arxius de proves (unit tests o end-to-end tests)
+            ├── 404.html         # Pàgina d'error 404 personalitzada
+            ├── README.md        # Documentació del projecte
+            ├── index.html       # Pàgina principal de la web
+            ├── robots.txt       # Arxiu per gestionar l'indexació dels motors de cerca
 
 
+L'arbre de continguts s'ha creat pensant que la web pot ser més complexa i en la implementació de crides JavaScript   
+fetch() per tractar la web de manera dinàmica. En conseqüència, les carpetes "components/" i "test/" s'utilitzaran en un futur.    
+D'altra banda, s'ha previst treballar amb formularis del costat del client sense enviar peticions al servidor i implementar diverses funcions.
 
----
+## Tecnologies utilitzades
 
-## **Tecnologies Utilitzades**
-1. **HTML5**: Per a l'estructura semàntica de la web.
-2. **CSS3**: Per al disseny visual, incloent responsivitat.
+- HTML5.
+- CSS3
+- Fontawesome.
+- [Figma]().
+- Git 
+- [FigmaJam](https://www.figma.com/board/SESONxPTn5YdZtHixlLXtg/norte-sur?node-id=0-1&t=cgnwzLbNbRMMFJXh-1)
+- [Github Project](https://github.com/users/Cristian-VP/projects/2/views/1): 
 
-### **Altres Eines**:
-- **Optimització d'imatges**: TinyPNG o ImageOptim.
-- **Editor de codi**: Visual Studio Code.
-- **Gestió de versions**: Git i GitHub.
-- **Figma**: Utilitzat per al disseny previ i la planificació de la interfície d'usuari.
-
----
-
-## **Característiques i Funcionalitats Principals**
-- **Disseny Modular**: Components reutilitzables per facilitar el manteniment.
-- **Responsivitat**: Optimitzada per a dispositius mòbils, tauletes i escriptoris.
-- **Pàgina 404 Personalitzada**: Millora l'experiència d'usuari en cas d'enllaços trencats.
-- **Gestió d'Indexació**: Control de pàgines indexades pels motors de cerca mitjançant l'arxiu `robots.txt`.
-- **Scripts Optimitzats**: Funcionalitats interactives implementades amb JavaScript.
-
----
-
-## **Captures de Pantalla**
-### **Versió d'Escriptori**
-1. **Home**: *Afegeix aquí una captura.*
-2. **Contacte**: *Afegeix aquí una captura.*
-
-### **Versió Mòbil**
-1. **Home**: *Afegeix aquí una captura.*
-2. **Contacte**: *Afegeix aquí una captura.*
-
----
-
-## **Divisió de Tasques entre els Membres del Grup**
-1. **Membre 1**: *Descripció de tasques.*
-2. **Membre 2**: *Descripció de tasques.*
-3. **Membre 3**: *Descripció de tasques.*
-4. **Membre 4**: *Descripció de tasques.*
-
----
+- Punts desenvolupats:   
+    - Optimització del contingut multimèdiaa: jpg, mp4 y webp.   
+    - CEO: Nomenclatura accessible als arxius i ús d'elements semàntics.
+    - Editor de codi: Visual Studio Code y WebStorm.
+    - Gestió de versions: Git i [GitHub](https://github.com/Cristian-VP/WebHTML).
+    - [Diseño Figma](https://www.figma.com/design/clucBBUsDKtfFqQ8IJJ4SW/WebPage?node-id=17-268&t=amMXRVozG83aVxDi-1) Utilitzat per al disseny previ i la planificació de la interfície d'usuari.
+    - Característiques i funcionalitats principals declaradas solo con css
+    - Disseny modular: Utilitza components reutilitzables per facilitar el manteniment.
+    - Responsivitat: La web està optimitzada per a diferents dispositius (mòbil, tauleta, escriptori).
+    - Pàgina 404 personalitzada: Millora l'experiència d'usuari en cas d'enllaços trencats (futuras implementaciones).
+    -  Gestió d'indexació: L'arxiu robots.txt controla les pàgines indexades pels motors de cerca.
+    -  Scripts optimitzats: Funcionalitats interactives implementades amb JavaScript.
+    -  Captures de pantalla: Per visualitzar-les, accediu a la carpeta "Capturas_Web"
 
 
+    
+## Divisió de tasques entre els membres del grup
 
+#### Github Project
 
+GitHub Projects és una eina de gestió de projectes integrada a GitHub. Permet organitzar i visualitzar el progrés de les tasques dins d’un repositori o d’una organització utilitzant taulers Kanban, taules o vistes personalitzades.    
+Està dissenyada per facilitar la col·laboració, el seguiment d’issues, pull requests i tasques, combinant característiques de planificació amb la integració de repositoris de codi.
+
+ - La divisió del treball s'ha organitzat de manera equitativa repartint  
+    las [tareas en Github Project](https://github.com/users/Cristian-VP/projects/2/views/1). Pudiant visualitzar-se a la secció de "Projects" dins del repositori.
