@@ -57,5 +57,9 @@ D'altra banda, s'ha previst treballar amb formularis del costat del client sense
 GitHub Projects és una eina de gestió de projectes integrada a GitHub. Permet organitzar i visualitzar el progrés de les tasques dins d’un repositori o d’una organització utilitzant taulers Kanban, taules o vistes personalitzades.    
 Està dissenyada per facilitar la col·laboració, el seguiment d’issues, pull requests i tasques, combinant característiques de planificació amb la integració de repositoris de codi.
 
- - La divisió del treball s'ha organitzat de manera equitativa repartint  
-    las [tareas en Github Project](https://github.com/users/Cristian-VP/projects/2/views/1). Pudiant visualitzar-se a la secció de "Projects" dins del repositori.
+ - tareas en Github Project](https://github.com/users/Cristian-VP/projects/2/views/1). Pudiant visualitzar-se a la secció de "Projects" dins del repositori.
+
+ Cristian Vacacela se ha encargado del index 
+ Sebastià Romaguera se ha encargado del descubre
+ Cristian Emilio se ha encargado de las paginas
+ 

@@ -15,11 +15,13 @@
     gap: 1.5rem; /* Espaciado entre imagen y texto */
     max-width: 600px; /* Evita que los bloques sean demasiado anchos */
     flex-wrap: wrap; /* Asegura que el texto se ajuste debajo de la imagen si es necesario */
+    box-sizing: border-box;
 }
 
 /* Imagen */
 .block img {
-    width: 10rem; /* Tamaño fijo para mantener consistencia */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 350px; /* Limitamos el tamaño de la imagen */
     height: auto; /* Ajusta la altura proporcionalmente */
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
