@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-Es">
+<html lang="es-ES">
 <head>
     <!-- Metas -->
     <meta charset="utf-8">
@@ -7,17 +7,42 @@
     <meta name="description" content="Descubre Mallorca de una manera única en nuestro blog y además puedes contactar con nosotros si ves algo que te gusta. Mallorca al alcance de tus manos">
     <meta name="keywords" content="mallorca,blog,turismo,calas,comida,visitas">
     <meta name="author" content="Grupo IFCW33 Borja Moll">
-    <!-- Link  -->
+    <!-- Link -->
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="icon" href="../assets/icons/favicon_norte-sur_48x48.svg" type="image/svg" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Import iconos de Fontawesome  -->
+    <!-- Import iconos de Fontawesome -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
     <title>Descubre</title>
 </head>
 <body>
+    <!-- Cabecera -->
+    <header>
+        <nav>
+            <div id="logo-container">
+                <a href="../index.html" title="Ir al inicio">NORTE A SUR</a>
+            </div>
+            <!-- Menú hamburguesa -->
+            <button class="hamburger" onclick="this.classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <!-- Menú -->
+            <div id="pages-container">
+                <ul class="menu-container">
+                    <li id="arrow-home"><a href="../index.html" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                    <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
+                    <li><a href="../404.html" target="_self">CONTÁCTA</a></li>
+                    <li><a href="../404.html" target="_self">CONÓCENOS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Fin Cabecera -->
+
     <header>
         <h1>Bienvenidos a Mallorca</h1>
         <p>Explora las maravillas de nuestra isla</p>
