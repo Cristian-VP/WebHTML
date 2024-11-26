@@ -1,8 +1,6 @@
 @import url("components/header.css");
 @import url("components/Descubre.css");
 @import url("components/Calas.css");
-@import url("components/Emplematicos.css");
-@import url("components/Gastronomia.css");
 @import url("components/footer.css");
 @import url("components/no-found-page.css");
 
@@ -30,6 +28,10 @@ body {
     background-color: var(--primary);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
+}
+
+main{
+    padding: 10em 0em;
 }
 
 
