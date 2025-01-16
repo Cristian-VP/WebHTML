@@ -36,9 +36,28 @@
                 <li id="arrow-home"><a href="index.html" target="_top"><img src="assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
                 <li><a href="pages/descubre.html" target="_self">DESCUBRE</a></li>
                 <li><a href="pages/formulario.html" target="_self">CONTÁCTA</a></li>
-                <li><a href="#" target="_self">REGISTRATE</a></li>
+                <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGISTRATE</a></li>
             </ul>
         </div>
+        <dialog id="register-container">
+            <form action="#" method="dialog">
+                <fieldset>
+                    <legend>DE NORTE A SUR</legend>
+                    <label for="email">EMAIL
+                        <input type="email" name="email" id="email"  minlength="16" maxlength="60" pattern="[\w.-]{3,26}@[a-z]{3,26}\.[a-z]{2,3}" autofocus required>
+                    </label>
+                    <label for="user">USER
+                        <input type="text" name="user" id="user" placeholder="Ingresa tu usuario" minlength="4" maxlength="10" pattern="[\w.-]{4,10}" required>
+                    </label>
+                    <label for="password">PASSWORD
+                        <input type="password" name="password" id="password" placeholder="Ingresa tu password" minlength="8" maxlength="15" pattern="(?=\w)+(\W)+(\d)+" required>
+                    </label>
+                </fieldset>
+                <div>
+                    <button action="submit" formmethod="post"></button>
+                </div>
+            </form>
+        </dialog>
     </nav>
 </header>
 <!-- Fin Navegador  -->
