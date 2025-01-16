@@ -122,7 +122,8 @@ video {
     align-self: flex-end;
     border: 3px solid;
     background-color: var(--primary);
-    border-radius: 59px;border-color: var(--color-green-letter);
+    border-radius: 59px;
+    border-color: var(--color-green-letter);
     font-size: 1rem;
     font-weight: bold;
 }

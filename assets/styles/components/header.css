@@ -61,8 +61,23 @@ nav{
     font-size: 1.8rem;
     font-weight: bold;
 }
+/*OJO dar aspecto de boton*/
+#pages-container ul li:nth-child(4) a{
+    color: var(--color-text-general);
+    padding: 0.35em 0.6em;
+    outline: var(--color-text-general) solid 3px;
+    outline-color: var(--color-green-letter);
+    border-radius: 50px;
 
-#pages-container ul li:hover{
+}
+
+#pages-container ul li:nth-child(4) a:hover{
+    background-color: var(--color-green-letter);
+    transition: background-color 0.3s ease;
+}
+
+
+#pages-container ul li:hover:not(:nth-child(4)){
     color: var(--color-text-general);
     text-decoration: underline;
     text-decoration-thickness: 0.2rem;

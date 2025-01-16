@@ -40,7 +40,7 @@
             </ul>
         </div>
         <dialog id="register-container">
-            <form action="#" method="dialog">
+            <form id="form-register" action="#" method="dialog">
                 <fieldset>
                     <legend>DE NORTE A SUR</legend>
                     <label for="email">EMAIL
@@ -50,13 +50,13 @@
                         <input type="text" name="user" id="user" placeholder="Ingresa tu usuario" minlength="4" maxlength="10" pattern="[\w.-]{4,10}" required>
                     </label>
                     <label for="password">PASSWORD
-                        <input type="password" name="password" id="password" placeholder="Ingresa tu password" minlength="8" maxlength="15" pattern="(?=\w)+(\W)+(\d)+" required>
+                        <input type="password" name="password" id="password" placeholder="Ingresa tu password" minlength="8" maxlength="15" pattern="(?=.+\W)(?=.+\d)(?=.+\w)" required>
                     </label>
                 </fieldset>
-                <div>
-                    <button action="submit" formmethod="post"></button>
-                </div>
             </form>
+            <div>
+                <button type="submit" form="form-register" formmethod="post">REGISTRATE</button>
+            </div>
         </dialog>
     </nav>
 </header>
