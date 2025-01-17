@@ -3,6 +3,7 @@
 @import url("components/Calas.css");
 @import url("components/footer.css");
 @import url("components/no-found-page.css");
+@import url("components/register-form.css");
 
 *{
     margin: 0;

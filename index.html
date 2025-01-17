@@ -43,20 +43,30 @@
             <form id="form-register" action="#" method="dialog">
                 <fieldset>
                     <legend>DE NORTE A SUR</legend>
-                    <label for="email">EMAIL
-                        <input type="email" name="email" id="email"  minlength="16" maxlength="60" pattern="[\w.-]{3,26}@[a-z]{3,26}\.[a-z]{2,3}" autofocus required>
-                    </label>
-                    <label for="user">USER
-                        <input type="text" name="user" id="user" placeholder="Ingresa tu usuario" minlength="4" maxlength="10" pattern="[\w.-]{4,10}" required>
-                    </label>
-                    <label for="password">PASSWORD
-                        <input type="password" name="password" id="password" placeholder="Ingresa tu password" minlength="8" maxlength="15" pattern="(?=.+\W)(?=.+\d)(?=.+\w)" required>
-                    </label>
+                    <ul>
+                        <li>
+                            <label for="email">EMAIL
+                                <input type="email" name="email" id="email"  minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                            </label>
+                            <label for="user">USER
+                                <input type="text" name="user" id="user" placeholder="Ingresa tu usuario" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                            </label>
+                            <label for="password">PASSWORD
+                                <input type="password" name="password" id="password" placeholder="Ingresa tu password" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="chk-condiciones">
+                                <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
+                                Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                            </label>
+                        </li>
+                    </ul>
                 </fieldset>
+                <div>
+                    <button type="submit" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGISTRATE</button>
+                </div>
             </form>
-            <div>
-                <button type="submit" form="form-register" formmethod="post">REGISTRATE</button>
-            </div>
         </dialog>
     </nav>
 </header>
