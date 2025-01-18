@@ -1,10 +1,6 @@
-* {
-    line-height: 1.2;
+.error-404{
+    line-height: 2.5em;
     margin: 0;
-}
-
-html {
-    color: #888;
     display: table;
     font-family: sans-serif;
     height: 100%;
@@ -12,41 +8,36 @@ html {
     width: 100%;
 }
 
-body {
-    display: table-cell;
-    vertical-align: middle;
-    margin: 2em auto;
+
+.error-404-container {
+    margin: 6em auto;
 }
 
-h1 {
+.error-404-container h1 {
     color: #555;
     font-size: 2em;
     font-weight: 400;
 }
 
-p {
+.error-404-container p {
     margin: 0 auto;
     width: 280px;
 }
+
 #dino{
     width: 20em;
     height: 20em;
-    display: block;
-    margin: auto;
-    cursor: zoom-in;
-    background-color: var(--primary);
-    transition: background-color 300ms;
 }
 
 
 @media only screen and (max-width: 280px) {
 
-    body,
+    .error-404,
     p {
         width: 95%;
     }
 
-    h1 {
+    .error-404-container h1 {
         font-size: 1.5em;
         margin: 0 0 0.3em;
     }

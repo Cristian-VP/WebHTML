@@ -1,5 +1,3 @@
-@import url(../main.css);
-
 
 nav{
     display: flex;
@@ -16,7 +14,7 @@ nav{
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 900;
+    z-index: 500;
 }
 
 /* Reglas comportamiento físico*/
@@ -63,14 +61,28 @@ nav{
     font-size: 1.8rem;
     font-weight: bold;
 }
-
-#pages-container ul li:hover{
+/* Underline excepto en el último elemento */
+#pages-container ul li:hover:not(:nth-child(4)){
     color: var(--color-text-general);
     text-decoration: underline;
     text-decoration-thickness: 0.2rem;
     text-underline-offset: 0.3rem;
     transition: 0.6s ease;
 }
+
+/* BOTON REGISTRO HEADER*/
+#pages-container ul li:nth-child(4) a{
+    padding: 0.35em 0.6em;
+    outline: var(--color-green-letter) solid 3px;
+    border-radius: 50px;
+}
+
+#pages-container ul li:nth-child(4) a:hover{
+    background-color: var(--color-green-letter);
+    transition: background-color 0.3s ease;
+}
+/* FIN BOTON REGISTRO HEADER*/
+
 
 @media (max-width: 1024px){
     /* Reglas comportamiento físico*/

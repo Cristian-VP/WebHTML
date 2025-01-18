@@ -1,0 +1,178 @@
+/* Comportamiento físico */
+
+#register-container{
+    width: 45vw;
+    border: initial;
+    position: fixed;
+    margin: auto;
+    /*inset: 0;
+    padding: 0;
+    top: calc(50vh - 20vh);
+    left: calc(50vw - 19vw);*/
+    overflow: hidden;
+    /*background-color: lightgoldenrodyellow;*/
+}
+
+#form-register{
+    width: inherit;
+    height: inherit;
+    padding: 0.8em;
+    /*background-color: lightcoral;*/
+}
+
+fieldset{
+    height: 95%;
+    padding: 1em;
+}
+
+fieldset ul li:nth-child(1){
+    height: 13em;
+    margin: 0.5em 0;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    justify-content: space-around;
+    /*background-color: lightblue;*/
+}
+
+.field-user{
+    display: inline-block;
+    width: 80%;
+    height: 3em;
+    /*background-color: lightgoldenrodyellow;*/
+}
+
+.field-user input{
+    width:100%;
+    height: 100%;
+}
+
+fieldset ul li:nth-child(2){
+    padding: 1.5em;
+    /*background-color: lightseagreen;*/
+}
+ /* Boton registro */
+#form-register div{
+    padding: 0.1em;
+    width: 15em;
+    height: 2.6em;
+    margin: 1.7em auto;
+    /*background-color: lightsteelblue;*/
+}
+
+#form-register div button{
+    width: 100%;
+    height: 100%;
+}
+
+/* Boton cierre modal*/
+#close-register{
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    right: 0;
+}
+
+#close-register button{
+    width: 100%;
+    height: 100%;
+}
+
+/* FIN Comportamiento físico*/
+
+/* Reglas específicas estilo*/
+
+#register-container{
+    background-color: transparent;
+}
+
+#register-container::backdrop{
+    backdrop-filter: blur(10px);
+    transition: backdrop-filter .5s ease;
+}
+
+fieldset{
+    /*border: solid 4px var(--color-text-general);*/
+    border: none;
+    border-radius: 1.5em;
+    background-color: var(--primary);
+}
+
+legend{
+    width: 40%;
+    height: 3em;
+    padding: 0.7em 03em;
+    text-align: center;
+    vertical-align: center;
+    background-color: var(--primary);
+    color: var(--color-text-general);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 3px solid var(--color-text-general);
+    border-radius: 1.5em;
+}
+
+.field-user input{
+    border: none;
+    border-radius: 2.2em;
+    background: rgb(237,236,234);
+    background: linear-gradient(0deg, rgba(237,236,234,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.field-user input::placeholder{
+    vertical-align: center;
+    font-family: FontAwesome;
+    color: var(--color-text-general);
+    opacity:.3;
+}
+
+fieldset ul li{
+   list-style: none;
+}
+
+fieldset ul li:nth-child(2){
+    text-align: right;
+    font-size: small;
+    font-weight: bold;
+    color: var(--color-text-general);
+}
+
+fieldset ul li:nth-child(2) a{
+    text-decoration: none;
+    color: lightslategray;
+}
+
+fieldset ul li:nth-child(2) label a:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: text-underline-offset .5s ease;
+}
+
+#register-button{
+    appearance: none;
+    font-size: 1.1rem;
+    outline: 3px solid var(--color-green-letter);
+    border: none;
+    background-color: var(--primary);
+    border-radius: 1.5em;
+}
+#register-button:hover{
+    background-color: var(--color-green-letter);
+    transition: background-color 0.3s ease;
+}
+
+#close-register button{
+    appearance: none;
+    border: none;
+    border-radius: 2.2em;
+    background-color: var(--primary);
+    text-align: center;
+    vertical-align: center;
+}
+
+#close-register button:hover{
+
+    transform: scale(92%);
+    transition: transform .2s ease-in-out;
+}
