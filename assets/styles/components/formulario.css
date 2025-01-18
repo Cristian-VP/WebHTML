@@ -1,13 +1,10 @@
 /* Estilo básico para el formulario */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #bfcf7d;
-    margin: 0;
-    padding: 0;
+.Cuerpo {
     display: flex;
     justify-content:space-evenly;
-    padding: 20px;
+    padding: 60px;
 } 
 .Reglas{
-    border-radius: 10px;
+    border-radius: 30px;
+    border-bottom: 30px;
 }

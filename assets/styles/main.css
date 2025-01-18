@@ -5,7 +5,7 @@
 @import url("components/Gastronomia.css");
 @import url("components/footer.css");
 @import url("components/no-found-page.css");
-
+@import url("components/formulario.css");
 *{
     margin: 0;
     padding: 0;
