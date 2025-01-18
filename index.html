@@ -40,19 +40,22 @@
             </ul>
         </div>
         <dialog id="register-container">
+            <div id="close-register">
+                <button  onclick="document.getElementById('register-container').close()"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
+            </div>
             <form id="form-register" action="#" method="dialog">
                 <fieldset>
                     <legend>DE NORTE A SUR</legend>
                     <ul>
                         <li>
-                            <label for="email">EMAIL
-                                <input type="email" name="email" id="email"  minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                            <label class="field-user" for="email">
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
                             </label>
-                            <label for="user">USER
-                                <input type="text" name="user" id="user" placeholder="Ingresa tu usuario" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                            <label class="field-user" for="user">
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
                             </label>
-                            <label for="password">PASSWORD
-                                <input type="password" name="password" id="password" placeholder="Ingresa tu password" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                            <label class="field-user" for="password">
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
                             </label>
                         </li>
                         <li>
@@ -64,7 +67,7 @@
                     </ul>
                 </fieldset>
                 <div>
-                    <button type="submit" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGISTRATE</button>
+                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
                 </div>
             </form>
         </dialog>
