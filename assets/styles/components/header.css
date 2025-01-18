@@ -61,6 +61,7 @@ nav{
     font-size: 1.8rem;
     font-weight: bold;
 }
+
 /* Underline excepto en el último elemento */
 #pages-container ul li:hover:not(:nth-child(4)){
     color: var(--color-text-general);
@@ -81,6 +82,7 @@ nav{
     background-color: var(--color-green-letter);
     transition: background-color 0.3s ease;
 }
+
 /* FIN BOTON REGISTRO HEADER*/
 
 

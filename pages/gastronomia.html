@@ -17,30 +17,65 @@
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
     <title>Gastronomía</title>
 </head>
-
 <body>
-    <!-- Navegador  -->
-    <header>
-        <nav>
-            <div id="logo-container">
-                <a href="../index.html" title="Ir al inicio">DE NORTE A SUR</a>
+<!-- Navegador  -->
+<header>
+    <nav>
+        <div id="logo-container">
+            <a href="../index.html" title="Ir al inicio">DE NORTE A SUR</a>
+        </div>
+        <!-- Menú hamburguesa -->
+        <button class="hamburger" onclick="this.classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Menú -->
+        <div id="pages-container" >
+            <ul class="menu-container">
+                <li id="arrow-home"><a href="../index.html" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
+                <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
+                <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGISTRATE</a></li>
+            </ul>
+        </div>
+        <dialog id="register-container">
+            <div id="close-register">
+                <button  onclick="document.getElementById('register-container').close()"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
             </div>
-            <!-- Menú hamburguesa -->
-            <button class="hamburger" onclick="this.classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <!-- Menú -->
-            <div id="pages-container" >
-                <ul class="menu-container">
-                    <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
-                    <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
-                    <li><a href="#" type="button" target="_self">REGISTRATE</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+            <form id="form-register" action="#" method="dialog">
+                <fieldset>
+                    <legend>DE NORTE A SUR</legend>
+                    <ul>
+                        <li>
+                            <label class="field-user" for="email">
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                            </label>
+                            <label class="field-user" for="user">
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                            </label>
+                            <label class="field-user" for="password">
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="chk-condiciones">
+                                <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
+                                Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div>
+                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
+                </div>
+            </form>
+        </dialog>
+    </nav>
+</header>
+<!-- Fin Navegador -->
+<!-- Main -->
+<main>
     <section class="container01">
         <article class="textos">
             <h1>Forn Sant Francesc</h1>
@@ -136,51 +171,51 @@
             <img src="../assets/images/gastronomia_page/valldemossa_mallorca.jpg" alt="Valldemossa">
         </picture>
     </section>
-    <!-- Footer -->
-    <footer>
-        <!-- Contacto de la empresa -->
-        <address>
-            <div id="empresa-footer">
-                <p>
-                    <em>DE NORTE A SUR</em>
-                </p>
-                <p>
-                    <strong><i>haz algo increible</i></strong>
-                </p>
-            </div>
-            <ul id="contacto-footer">
-                <li>
-                    <a id="mail" href="mailto:info@nortesur.es" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i>Contact us</a>
-                </li>
-                <li>
-                    <a id="phone" href="tel:+633548978" target="_blank"><i class="fa-solid fa-phone fa-xl"></i>Call us</a>
-                </li>
-                <li>
-                    <a id="localitation" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x129793b01716a01b:0x55bc574de040df4a%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwittbPCke6JAxVHTaQEHY_NCrIQ4kB6BAg-EAM&usg=AOvVaw2FU91ag2-M24lRvROwiYyQ"><i class="fa-solid fa-location-dot fa-xl"></i>Find us</a>
-                </li>
-            </ul>
-        </address>
-        <!-- Redes sociales -->
-        <div id="redes-footer">
-            <p><strong>Encuentranos en:</strong></p>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
-                </li>
-            </ul>
+</main>
+<!-- Footer -->
+<footer>
+    <!-- Contacto de la empresa -->
+    <address>
+        <div id="empresa-footer">
+            <p>
+                <em>DE NORTE A SUR</em>
+            </p>
+            <p>
+                <strong><i>haz algo increible</i></strong>
+            </p>
         </div>
-    </footer>
+        <ul id="contacto-footer">
+            <li>
+                <a id="mail" href="mailto:info@nortesur.es" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i>Contact us</a>
+            </li>
+            <li>
+                <a id="phone" href="tel:+633548978" target="_blank"><i class="fa-solid fa-phone fa-xl"></i>Call us</a>
+            </li>
+            <li>
+                <a id="localitation" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x129793b01716a01b:0x55bc574de040df4a%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwittbPCke6JAxVHTaQEHY_NCrIQ4kB6BAg-EAM&usg=AOvVaw2FU91ag2-M24lRvROwiYyQ"><i class="fa-solid fa-location-dot fa-xl"></i>Find us</a>
+            </li>
+        </ul>
+    </address>
+    <!-- Redes sociales -->
+    <div id="redes-footer">
+        <p><strong>Encuentranos en:</strong></p>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
 <!-- Fin Footer -->
-
 </body>
 
 </html>

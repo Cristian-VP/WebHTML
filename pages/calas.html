@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es-ES">
-
 <head>
     <!-- Metadatos -->
     <meta charset="utf-8">
@@ -8,48 +7,79 @@
     <meta name="description" content="Descubre Mallorca de una manera única en nuestro blog y contacta con nosotros si algo te interesa. Mallorca al alcance de tus manos.">
     <meta name="keywords" content="mallorca, blog, turismo, calas, comida, visitas">
     <meta name="author" content="Grupo IFCW33 Borja Moll">
-    <title>Calas de Mallorca</title>
-
     <!-- Enlaces CSS -->
     <link rel="stylesheet" href="../assets/styles/main.css">
-    <link rel="icon" href="../assets/icons/favicon_norte-sur_48x48.svg" type="image/svg+xml">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-
+    <link rel="icon" href="../assets/icons/favicon_norte-sur_48x48.svg" type="image/svg" sizes="any">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- FontAwesome para iconos -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
+    <title>Calas de Mallorca</title>
 </head>
-
 <body>
-    <!-- Cabecera -->
-    <header>
-        <nav>
-            <div id="logo-container">
-                <a href="../index.html" title="Ir al inicio">DE NORTE A SUR</a>
+<!-- Navegador -->
+<header>
+    <nav>
+        <div id="logo-container">
+            <a href="../index.html" title="Ir al inicio">DE NORTE A SUR</a>
+        </div>
+        <!-- Menú hamburguesa -->
+        <button class="hamburger" onclick="this.classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Menú  -->
+        <div id="pages-container">
+            <ul class="menu-container">
+                <li id="arrow-home"><a href="../index.html" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                <li><a href="descubre.html">DESCUBRE</a></li>
+                <li><a href="formulario.html">CONTÁCTANOS</a></li>
+                <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGÍSTRATE</a></li>
+            </ul>
+        </div>
+        <dialog id="register-container">
+            <div id="close-register">
+                <button  onclick="document.getElementById('register-container').close()"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
             </div>
-            <!-- Menú hamburguesa -->
-            <button class="hamburger" onclick="this.classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <!-- Menú de navegación -->
-            <div id="pages-container">
-                <ul class="menu-container">
-                    <li><a href="descubre.html">DESCUBRE</a></li>
-                    <li><a href="formulario.html">CONTÁCTANOS</a></li>
-                    <li><a type="button">CONÓCENOS</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
+            <form id="form-register" action="#" method="dialog">
+                <fieldset>
+                    <legend>DE NORTE A SUR</legend>
+                    <ul>
+                        <li>
+                            <label class="field-user" for="email">
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                            </label>
+                            <label class="field-user" for="user">
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                            </label>
+                            <label class="field-user" for="password">
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="chk-condiciones">
+                                <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
+                                Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div>
+                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
+                </div>
+            </form>
+        </dialog>
+    </nav>
+</header>
     <!-- Contenido principal -->
     <main>
         <!-- Sección Cala Mondragó -->
         <section class="container01">
             <div class="block">
                 <picture>
-                    <img src="../assets/images/calas_page/cala-mondrago_santanyi.jpg" alt="Cala Mondragó">
+                    <img src="../assets/images/calas_page/cala-mondrago_santanyi.webp" alt="Cala Mondragó">
                 </picture>
                 <div class="textos">
                     <h1>Cala Mondragó</h1>
@@ -66,7 +96,7 @@
         <section class="container01">
             <div class="block">
                 <picture>
-                    <img src="../assets/images/calas_page/cala-des-moro_santanyi.jpg" alt="Cala des Moro">
+                    <img src="../assets/images/calas_page/cala-des-moro_santanyi.webp" alt="Cala des Moro">
                 </picture>
                 <div class="textos">
                     <h1>Cala des Moro</h1>

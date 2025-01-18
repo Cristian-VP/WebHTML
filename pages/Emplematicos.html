@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es-Es">
-
 <head>
     <!-- Metas -->
     <meta charset="utf-8">
@@ -18,31 +17,65 @@
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
     <title>Emplematicos</title>
 </head>
-
 <body>
-    <!-- Navegador  -->
-    <header>
-        <nav>
-            <div id="logo-container">
-                <a href="../index.html" title="Ir al inicio">DE NORTE A SUR</a>
+<!-- Navegador  -->
+<header>
+    <nav>
+        <div id="logo-container">
+            <a href="../index.html" title="Ir al inicio">DE NORTE A SUR</a>
+        </div>
+        <!-- Menú hamburguesa -->
+        <button class="hamburger" onclick="this.classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Menú -->
+        <div id="pages-container" >
+            <ul class="menu-container">
+                <li id="arrow-home"><a href="../index.html" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
+                <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
+                <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGISTRATE</a></li>
+            </ul>
+        </div>
+        <dialog id="register-container">
+            <div id="close-register">
+                <button  onclick="document.getElementById('register-container').close()"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
             </div>
-            <!-- Menú hamburguesa -->
-            <button class="hamburger" onclick="this.classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <!-- Menú -->
-            <div id="pages-container" >
-                <ul class="menu-container">
-                    <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
-                    <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
-                    <li><a href="#" target="_self">REGISTRATE</a></li>
-                </ul>
-            </div>
-        </nav>
+            <form id="form-register" action="#" method="dialog">
+                <fieldset>
+                    <legend>DE NORTE A SUR</legend>
+                    <ul>
+                        <li>
+                            <label class="field-user" for="email">
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                            </label>
+                            <label class="field-user" for="user">
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                            </label>
+                            <label class="field-user" for="password">
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="chk-condiciones">
+                                <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
+                                Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div>
+                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
+                </div>
+            </form>
+        </dialog>
+    </nav>
     </header>
-
+<!-- Fin Navegador  -->
+<!-- Main -->
+<main>
     <section class="container01">
         <article class="textos">
             <h1>La Catedral de la Luz</h1>
@@ -135,8 +168,10 @@
             <img src="../assets/images/emblematicos_page/EsBaluard.jpg" alt="El Museo Es Baluard">
         </picture>
     </section>
-    <!-- Footer -->
-    <footer>
+</main>
+<!-- Fin Main -->
+<!-- Footer -->
+<footer>
         <!-- Contacto de la empresa -->
         <address>
             <div id="empresa-footer">

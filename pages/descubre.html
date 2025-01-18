@@ -18,100 +18,132 @@
     <title>Descubre</title>
 </head>
 <body>
-    <!-- Cabecera -->
-    <header>
-        <nav>
-            <div id="logo-container">
-                <a href="../index.html" title="Ir al inicio">NORTE A SUR</a>
-            </div>
-            <!-- Menú hamburguesa -->
-            <button class="hamburger" onclick="this.classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <!-- Menú -->
-            <div id="pages-container">
-                <ul class="menu-container">
-                    <li id="arrow-home"><a href="../index.html" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
-                    <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
-                    <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
-                    <li><a href="#" target="_self">REGISTRATE</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Fin Cabecera -->
-
-   <main>
-    <div class="container">
-        <!-- Tarjeta de Calas -->
-        <a href="calas.html" class="card">
-            <img src="../assets/images/descubre_page/descubre-calas.jpg" alt="Imagen de Calas">
-            <div class="card-content">
-                <h2>Calas</h2>
-                <p>Descubre algunas de las joyas ocultas que componen este espectacular paisaje costero.</p>
-            </div>
-        </a>
-        <!-- Tarjeta de Edificios Emblemáticos -->
-        <a href="Emplematicos.html" class="card">
-            <img src="../assets/images/descubre_page/descubre-edificios-emblematicos.jpg" alt="Imagen de Edificios Emblemáticos">
-            <div class="card-content">
-                <h2>Edificios Emblemáticos</h2>
-                <p>No todo son calas en Mallorca. Descubre sus edificios más emblemáticos que ofrecen una mirada al desarrollo y tradición de Mallorca.</p>
-            </div>
-        </a>
-        <!-- Tarjeta de Gastronomía -->
-        <a href="gastronomia.html" class="card">
-            <img src="../assets/images/descubre_page/descubre-gastronomia.jpg" alt="Imagen de Gastronomía">
-            <div class="card-content">
-                <h2>Gastronomía</h2>
-                <p>Nuestra identidad local. Descubre los sabores que hacen de Mallorca un destino culinario único.</p>
-            </div>
-        </a>
-    </div>
-    </main>
-    <footer>
-        <!-- Contacto de la empresa -->
-        <address>
-            <div id="empresa-footer">
-                <p>
-                    <em>DE NORTE A SUR</em>
-                </p>
-                <p>
-                    <strong><i>haz algo increible</i></strong>
-                </p>
-            </div>
-            <ul id="contacto-footer">
-                <li>
-                    <a id="mail" href="mailto:info@nortesur.es" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i>Contact us</a>
-                </li>
-                <li>
-                    <a id="phone" href="tel:+633548978" target="_blank"><i class="fa-solid fa-phone fa-xl"></i>Call us</a>
-                </li>
-                <li>
-                    <a id="localitation" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x129793b01716a01b:0x55bc574de040df4a%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwittbPCke6JAxVHTaQEHY_NCrIQ4kB6BAg-EAM&usg=AOvVaw2FU91ag2-M24lRvROwiYyQ"><i class="fa-solid fa-location-dot fa-xl"></i>Find us</a>
-                </li>
-            </ul>
-        </address>
-        <!-- Redes sociales -->
-        <div id="redes-footer">
-            <p><strong>Encuentranos en:</strong></p>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
-                </li>
+<!-- Cabecera -->
+<header>
+    <nav>
+        <div id="logo-container">
+            <a href="../index.html" title="Ir al inicio">NORTE A SUR</a>
+        </div>
+        <!-- Menú hamburguesa -->
+        <button class="hamburger" onclick="this.classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <!-- Menú -->
+        <div id="pages-container">
+            <ul class="menu-container">
+                <li id="arrow-home"><a href="../index.html" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
+                <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
+                <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGISTRATE</a></li>
             </ul>
         </div>
-    </footer>
+        <dialog id="register-container">
+            <div id="close-register">
+                <button  onclick="document.getElementById('register-container').close()"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
+            </div>
+            <form id="form-register" action="#" method="dialog">
+                <fieldset>
+                    <legend>DE NORTE A SUR</legend>
+                    <ul>
+                        <li>
+                            <label class="field-user" for="email">
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                            </label>
+                            <label class="field-user" for="user">
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                            </label>
+                            <label class="field-user" for="password">
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="chk-condiciones">
+                                <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
+                                Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <div>
+                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
+                </div>
+            </form>
+        </dialog>
+    </nav>
+</header>
+<!-- Fin Cabecera -->
+<!-- Main -->
+<main>
+<div class="container">
+    <!-- Tarjeta de Calas -->
+    <a href="calas.html" class="card">
+        <img src="../assets/images/descubre_page/descubre-calas.jpg" alt="Imagen de Calas">
+        <div class="card-content">
+            <h2>Calas</h2>
+            <p>Descubre algunas de las joyas ocultas que componen este espectacular paisaje costero.</p>
+        </div>
+    </a>
+    <!-- Tarjeta de Edificios Emblemáticos -->
+    <a href="Emplematicos.html" class="card">
+        <img src="../assets/images/descubre_page/descubre-edificios-emblematicos.jpg" alt="Imagen de Edificios Emblemáticos">
+        <div class="card-content">
+            <h2>Edificios Emblemáticos</h2>
+            <p>No todo son calas en Mallorca. Descubre sus edificios más emblemáticos que ofrecen una mirada al desarrollo y tradición de Mallorca.</p>
+        </div>
+    </a>
+    <!-- Tarjeta de Gastronomía -->
+    <a href="gastronomia.html" class="card">
+        <img src="../assets/images/descubre_page/descubre-gastronomia.jpg" alt="Imagen de Gastronomía">
+        <div class="card-content">
+            <h2>Gastronomía</h2>
+            <p>Nuestra identidad local. Descubre los sabores que hacen de Mallorca un destino culinario único.</p>
+        </div>
+    </a>
+</div>
+</main>
+<footer>
+    <!-- Contacto de la empresa -->
+    <address>
+        <div id="empresa-footer">
+            <p>
+                <em>DE NORTE A SUR</em>
+            </p>
+            <p>
+                <strong><i>haz algo increible</i></strong>
+            </p>
+        </div>
+        <ul id="contacto-footer">
+            <li>
+                <a id="mail" href="mailto:info@nortesur.es" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i>Contact us</a>
+            </li>
+            <li>
+                <a id="phone" href="tel:+633548978" target="_blank"><i class="fa-solid fa-phone fa-xl"></i>Call us</a>
+            </li>
+            <li>
+                <a id="localitation" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x129793b01716a01b:0x55bc574de040df4a%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwittbPCke6JAxVHTaQEHY_NCrIQ4kB6BAg-EAM&usg=AOvVaw2FU91ag2-M24lRvROwiYyQ"><i class="fa-solid fa-location-dot fa-xl"></i>Find us</a>
+            </li>
+        </ul>
+    </address>
+    <!-- Redes sociales -->
+    <div id="redes-footer">
+        <p><strong>Encuentranos en:</strong></p>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
