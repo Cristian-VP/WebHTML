@@ -61,7 +61,21 @@ Està dissenyada per facilitar la col·laboració, el seguiment d’issues, pull
 
  - tareas en Github Project](https://github.com/users/Cristian-VP/projects/2/views/1). Pudiant visualitzar-se a la secció de "Projects" dins del repositori.
 
- Cristian Vacacela se ha encargado del index 
- Sebastià Romaguera se ha encargado del descubre
+ Cristian Vacacela se ha encargado del index y del segundo formulario relacionado con el registrate.
+ Sebastià Romaguera se ha encargado del descubre y del ReadMe y modificaciones para el correcto funcionamiento de la pagina.
  Cristian Emilio se ha encargado de las paginas
+ Abimael Álvarez se ha encargado del primer formulario relacionado con el contacta.
+
+ #### Modificaciones realizadas en los archivos HTML, CSS
+ Para el primer formulario hay una nueva page llamada formulario.html relacionado con el contacta y su css llamado formulario.css.
+
+ #### Formularios
+ ![image](https://github.com/user-attachments/assets/0f6f06cc-141e-4c07-9ddb-15c89d7e439d)
+ Este formulario sirve solamente para contactar y obtener información del apartado que quieran con tan solo numero, mail y nombre.
+
+
+
+ #### Expresiones regulares para la validación
+ 
+
  
