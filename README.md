@@ -68,7 +68,7 @@ Està dissenyada per facilitar la col·laboració, el seguiment d’issues, pull
 
  #### Modificaciones realizadas en los archivos HTML, CSS
  Para el primer formulario hay una nueva page llamada formulario.html relacionado con el contacta y su css llamado formulario.css.
- Para el segundo solamente es una ventana emergente desde el boton registrarse desde el header.
+ Para el segundo solamente es una ventana emergente desde el boton registrarse desde el header. Solo se ha actualizado el index.html.
 
  #### Formularios
  ![image](https://github.com/user-attachments/assets/0f6f06cc-141e-4c07-9ddb-15c89d7e439d)
