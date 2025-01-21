@@ -68,14 +68,17 @@ Està dissenyada per facilitar la col·laboració, el seguiment d’issues, pull
 
  #### Modificaciones realizadas en los archivos HTML, CSS
  Para el primer formulario hay una nueva page llamada formulario.html relacionado con el contacta y su css llamado formulario.css.
+ Para el segundo solamente es una ventana emergente desde el boton registrarse desde el header.
 
  #### Formularios
  ![image](https://github.com/user-attachments/assets/0f6f06cc-141e-4c07-9ddb-15c89d7e439d)
  Este formulario sirve solamente para contactar y obtener información del apartado que quieran con tan solo numero, mail y nombre.
 
+![image](https://github.com/user-attachments/assets/f8f75558-928e-46c4-b40d-b33c87b2da3d)
+ Este formulario sirve para refistrarte y entrar en nuestra base de datos aceptando nuestros terminos con una checkbox.
 
 
  #### Expresiones regulares para la validación
- 
+ Para el primero no se han usado regex.
 
  
