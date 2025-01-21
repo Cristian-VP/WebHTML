@@ -75,7 +75,7 @@ Està dissenyada per facilitar la col·laboració, el seguiment d’issues, pull
  Este formulario sirve solamente para contactar y obtener información del apartado que quieran con tan solo numero, mail y nombre.
 
 ![image](https://github.com/user-attachments/assets/f8f75558-928e-46c4-b40d-b33c87b2da3d)
- Este formulario sirve para refistrarte y entrar en nuestra base de datos aceptando nuestros terminos con una checkbox.
+ Este formulario sirve para registrarte y entrar en nuestra base de datos aceptando nuestros terminos con una checkbox.
 
 
  #### Expresiones regulares para la validación
