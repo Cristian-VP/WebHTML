@@ -79,6 +79,22 @@ Està dissenyada per facilitar la col·laboració, el seguiment d’issues, pull
 
 
  #### Expresiones regulares para la validación
- Para el primero no se han usado regex.
+Para el formulario de contácto no se han usado regex.
 
- 
+Para el formulario de registro que se encuentra dentro del header de todas las páginas:
+
+Se le solicita 3 tipod de entradas al usuario: email, usuario, password. De manera que se configuró tres expresiones regulares que nos ayuda a validar la entrada del dato, usando el atributo patter = "regEx". 
+
+Las expresiones regulares son:          
+
+    type="email" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$"       
+    
+La regEx limita la siguiente estructura : [carácter alfanumérica ó barra baja ó punto ó guión (de 3 a 30 caracteres)] [caracter @] [carácter alfanumérica ó barra baja ó punto ó guión (de 3 a 30 carácteres)]  [ caracter .] [carácter alfanumérica ó barra baja ó punto ó guión (de 2 a 3 carácteres)]       
+
+    type="text" pattern="^[\w.-]{4,10}$"        
+
+La regEx limita la siguiente estructura: [carácter alfanumérica ó barra baja ó punto ó guión (de 4 a 10 carácteres)]        
+    
+    type="password" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$"
+
+La regEx limita la siguiente estructura, haciendo uso de tres LookAhead positivos definidos entre (): (nos asegura que después de cualquier carácter haya una letra)(nos asegura que después de cualquier carácter haya un carácter especial)(nos asegura que después de cualquier carácter haya un número){palabra de mínimo de 8 carácteres}
