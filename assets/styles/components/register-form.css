@@ -139,15 +139,10 @@ fieldset ul li:nth-child(2) label a:hover{
 #register-button{
     appearance: none;
     font-size: 1.1rem;
-    outline: 3px solid var(--color-green-letter);
     border: none;
-    background-color: var(--primary);
     border-radius: 1.5em;
 }
-#register-button:hover{
-    background-color: var(--color-green-letter);
-    transition: background-color 0.3s ease;
-}
+
 
 #close-register button{
     appearance: none;
@@ -161,4 +156,38 @@ fieldset ul li:nth-child(2) label a:hover{
 #close-register button:hover{
     transform: scale(80%);
     transition: transform .2s ease-in-out;
+}
+/* Fin reglas específicas*/
+
+/* Validacion formulario */
+#email-error, #password-error, #user-error{
+    display: none;
+    width: 100%;
+    padding: 0.3em;
+
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: orangered;
+
+    background-color: lightpink;
+}
+
+#register-button:disabled{
+    background-color: lightgrey;
+    outline: 3px solid var(--color-text-general);
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#register-button:enabled{
+    outline: 3px solid var(--color-green-letter);
+    border: none;
+    background-color: var(--primary);
+    cursor: initial;
+}
+
+#register-button[enabled]:hover{
+    background-color: var(--color-green-letter);
+    transition: background-color 0.3s ease;
 }

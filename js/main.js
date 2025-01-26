@@ -1,0 +1,1 @@
+import "components/form_register.js";

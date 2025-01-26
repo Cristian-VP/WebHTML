@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Import iconos de Fontawesome  -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script src="js/main.js"></script>
     <title>Norte a sur</title>
 </head>
 <body>
@@ -49,13 +51,17 @@
                     <ul>
                         <li>
                             <label class="field-user" for="email">
-                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   nombre@mail.dominio" minlength="16" maxlength="60" oninput="formValidator()"   autofocus>
+                                <span id="email-error"></span>
                             </label>
                             <label class="field-user" for="user">
-                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   myuser |my.user87" minlength="4" maxlength="10" oninput="formValidator()">
+                                <span id="user-error"></span>
+                                <span> </span>
                             </label>
                             <label class="field-user" for="password">
-                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    mi1PAsS78&%" minlength="8" maxlength="15" oninput="formValidator()">
+                                <span id ="password-error"></span>
                             </label>
                         </li>
                         <li>
@@ -67,7 +73,7 @@
                     </ul>
                 </fieldset>
                 <div>
-                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
+                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post" disabled>REGÍSTRATE</button>
                 </div>
             </form>
         </dialog>
