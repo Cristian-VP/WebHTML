@@ -1,3 +1,4 @@
+
 //Expresiones regulares
 const regExUser = new RegExp('^[a-zA-Z0-9]+([._-]?[a-zA-Z0-9]+)*$');
 //const regExPassword = new RegExp('^(?=.*[A-Za-z])(?=.*\\W)(?=.*\\d).{8,15}$');
@@ -15,6 +16,7 @@ const errorUser = document.getElementById('user-error');
 // Functions validators inputs
     //USER
     function userValidation(input) {
+        console.log("Entro en la validación y soy user");
         let value = input;
         // Valido su longitud
         if(value.length  < 4 || value.length > 10) {
@@ -34,6 +36,7 @@ const errorUser = document.getElementById('user-error');
     }
     //EMAIL
     function emailValidation(input) {
+        console.log("Entro en la validación y soy email");
         let value = input;
         // Valido su longitud
         if(value.length  < 10 || value.length > 60) {
@@ -53,11 +56,12 @@ const errorUser = document.getElementById('user-error');
     }
     //PASSWORD
     function passwordValidation(input) {
+        console.log("Entro en la validación y soy password");
         let value = input;
         // Valido la longitud mínima
         if(value.length  < 8 || value.length > 15) {
             errorPassword.innerHTML = "Debe de tener de 8 a 15 carácteres";
-            errorUser.style.display = "block";
+            errorPassword.style.display = "block";
             return false;
         }
         // Lookhead positivo que asegura que exista al menos una letra [a-z]
@@ -78,28 +82,28 @@ const errorUser = document.getElementById('user-error');
             errorPassword.style.display = "block";
             return false;
         }
-        errorUser.style.display = "none";
-        userInput.style.border = "2px solid lightyellow";
+        errorPassword.style.display = "none";
+        passwordInput.style.border = "2px solid lightyellow";
         return true;
     }
 
-//Function validatos form
-function formValidator (){
-    let userInputValue = userInput.value;
-    let passwordInputValue = passwordInput.value;
-    let emailInputValue = emailInput.value;
+    //Function validatos form
+    export function formValidator (){
+        let userInputValue = userInput.value;
+        let passwordInputValue = passwordInput.value;
+        let emailInputValue = emailInput.value;
 
-    const userInputValidated = userValidation(userInputValue) ;
-    const passwordInputValidated = passwordValidation(passwordInputValue);
-    const emailInputValidated = emailValidation(emailInputValue);
+        const userInputValidated = userValidation(userInputValue) ;
+        const passwordInputValidated = passwordValidation(passwordInputValue);
+        const emailInputValidated = emailValidation(emailInputValue);
 
-    if( userInputValidated && passwordInputValidated && emailInputValidated){
-        emailInput.style.borderColor = "green";
-        userInput.style.borderColor = "green";
-        passwordInput.style.borderColor = "green";
+        if( userInputValidated && passwordInputValidated && emailInputValidated){
+            emailInput.style.borderColor = "green";
+            userInput.style.borderColor = "green";
+            passwordInput.style.borderColor = "green";
 
-        buttonSubmit.removeAttribute('disabled');
-        buttonSubmit.setAttribute('enable', 'true');
+            buttonSubmit.removeAttribute('disabled');
+            buttonSubmit.setAttribute('enable', 'true');
+        }
     }
-}
 

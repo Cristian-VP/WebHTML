@@ -16,7 +16,7 @@
     <!-- Import iconos de Fontawesome  -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
     <!-- Script -->
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
     <title>Norte a sur</title>
 </head>
 <body>
@@ -51,16 +51,15 @@
                     <ul>
                         <li>
                             <label class="field-user" for="email">
-                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   nombre@mail.dominio" minlength="16" maxlength="60" oninput="formValidator()"   autofocus>
+                                <input type="email" name="email" id="email" placeholder="   &#xf0e0;   nombre@mail.dominio" minlength="16" maxlength="60" autofocus>
                                 <span id="email-error"></span>
                             </label>
                             <label class="field-user" for="user">
-                                <input type="text" name="user" id="user" placeholder="   &#xf007;   myuser |my.user87" minlength="4" maxlength="10" oninput="formValidator()">
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   myuser |my.user87" minlength="4" maxlength="10">
                                 <span id="user-error"></span>
-                                <span> </span>
                             </label>
                             <label class="field-user" for="password">
-                                <input type="password" name="password" id="password" placeholder="   &#xf084;    mi1PAsS78&%" minlength="8" maxlength="15" oninput="formValidator()">
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    mi1PAsS78&%" minlength="8" maxlength="15">
                                 <span id ="password-error"></span>
                             </label>
                         </li>
