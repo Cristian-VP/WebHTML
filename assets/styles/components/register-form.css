@@ -19,7 +19,7 @@ fieldset{
 }
 
 fieldset ul li:nth-child(1){
-    height: 13em;
+    height: 16em;
     margin: 0.5em 0;
     display: flex;
     flex-direction: column;
@@ -160,17 +160,20 @@ fieldset ul li:nth-child(2) label a:hover{
 /* Fin reglas específicas*/
 
 /* Validacion formulario */
+.field-user input{
+    padding-left: 0.8em;
+}
 #email-error, #password-error, #user-error{
     display: none;
     width: 100%;
-    padding: 0.3em;
+    padding: 0.8em;
 
     text-align: center;
     font-size: 0.8em;
     font-weight: bold;
     color: orangered;
 
-    background-color: lightpink;
+    /*background-color: lightpink;*/
 }
 
 #register-button:disabled{
@@ -187,7 +190,7 @@ fieldset ul li:nth-child(2) label a:hover{
     cursor: initial;
 }
 
-#register-button[enabled]:hover{
+#register-button:enabled:hover{
     background-color: var(--color-green-letter);
     transition: background-color 0.3s ease;
 }
