@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es-ES" dir="ltr" data-theme="light">
 <head>
     <!-- Metas -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Descubre Mallorca de una manera única en nuestro blog y además puedes contactar con nosotros si ves algo que te gusta. Mallorca al alcance de tus manos">
     <meta name="keywords" content="mallorca,blog,turismo,calas,comida,visitas">
-    <meta name="author" content="Grupo IFCW33 Borja Moll">
+    <meta name="author" content="Abimael - Sebastian - Cristian">
     <!-- Link  -->
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="icon" href="assets/icons/favicon_norte-sur_48x48.svg" type="image/svg" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- Import iconos de Fontawesome  -->
+    <!-- Import iconos  -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
     <!-- Script -->
     <script type="module" src="js/main.js"></script>
@@ -81,6 +81,12 @@
 <!-- Fin Navegador  -->
 <!-- Main -->
 <main>
+    <!-- Boton cambio de tema claro - oscuro -->
+    <aside>
+        <button type="button" data-theme-toogle aria-label="Change to dark theme">
+            <img  src="assets/icons/light_mode.svg" alt="theme-selection">
+        </button>
+    </aside>
     <section id="video-home">
         <video autoplay muted loop id="myVideo">
             <source alt="Man swiming in the mid ocean" src="assets/video/coverr-a-man-swimming-near-to-the-mid-ocean-ridge-6042-1080p.mp4" type="video/mp4">
@@ -112,7 +118,7 @@
 </main>
 <!-- Fin Main -->
 <!-- Footer -->
-<footer style="position: absolute;">
+<footer>
         <!-- Contacto de la empresa -->
         <address>
             <div id="empresa-footer">

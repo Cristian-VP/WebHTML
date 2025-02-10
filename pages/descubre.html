@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="es-ES" dir="ltr" data-theme="light">
 <head>
     <!-- Metas -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Descubre Mallorca de una manera única en nuestro blog y además puedes contactar con nosotros si ves algo que te gusta. Mallorca al alcance de tus manos">
     <meta name="keywords" content="mallorca,blog,turismo,calas,comida,visitas">
-    <meta name="author" content="Grupo IFCW33 Borja Moll">
+    <meta name="author" content="Abimael - Sebastian - Cristian">
     <!-- Link -->
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="icon" href="../assets/icons/favicon_norte-sur_48x48.svg" type="image/svg" sizes="any">
@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Import iconos de Fontawesome -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script type="module" src="../js/main.js"></script>
     <title>Descubre</title>
 </head>
 <body>
@@ -49,25 +51,28 @@
                     <ul>
                         <li>
                             <label class="field-user" for="email">
-                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   nombre@mail.dominio" minlength="16" maxlength="60" autofocus>
+                                <span id="email-error"></span>
                             </label>
                             <label class="field-user" for="user">
-                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   myuser | my.user87" minlength="4" maxlength="10">
+                                <span id="user-error"></span>
                             </label>
                             <label class="field-user" for="password">
-                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    m1P4$sW0_rd" minlength="8" maxlength="15">
+                                <span id ="password-error"></span>
                             </label>
                         </li>
                         <li>
                             <label for="chk-condiciones">
                                 <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
-                                Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                                Al registrar una cuenta, aceptas nuestros <br><a href="../404.html">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
                             </label>
                         </li>
                     </ul>
                 </fieldset>
                 <div>
-                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
+                    <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post" disabled>REGÍSTRATE</button>
                 </div>
             </form>
         </dialog>
@@ -77,6 +82,12 @@
 <!-- Main -->
 <main>
 <div class="container">
+    <!-- Boton cambio de tema claro - oscuro -->
+    <aside>
+        <button type="button" data-theme-toogle aria-label="Change to dark theme">
+            <img  src="../assets/icons/light_mode.svg" alt="theme-selection">
+        </button>
+    </aside>
     <!-- Tarjeta de Calas -->
     <a href="calas.html" class="card">
         <img src="../assets/images/descubre_page/descubre-calas.jpg" alt="Imagen de Calas">

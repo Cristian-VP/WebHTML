@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-Es">
+<html lang="es-Es" dir="ltr" data-theme="light">
 <head>
     <!-- Metas -->
     <meta charset="utf-8">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Import iconos de Fontawesome  -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
-    <title>Emplematicos</title>
+    <title>Emblemáticos</title>
 </head>
 <body>
 <!-- Navegador  -->
@@ -49,19 +49,22 @@
                     <ul>
                         <li>
                             <label class="field-user" for="email">
-                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
+                                <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   nombre@mail.dominio" minlength="16" maxlength="60" autofocus required>
+                                <span id="email-error"></span>
                             </label>
                             <label class="field-user" for="user">
-                                <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
+                                <input type="text" name="user" id="user" placeholder="   &#xf007;   myuser | my.user87" minlength="4" maxlength="10" required>
+                                <span id="user-error"></span>
                             </label>
                             <label class="field-user" for="password">
-                                <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
+                                <input type="password" name="password" id="password" placeholder="   &#xf084;    ?mi1PAsS78%" minlength="8" maxlength="15" required>
+                                <span id ="password-error"></span>
                             </label>
                         </li>
                         <li>
                             <label for="chk-condiciones">
                                 <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
-                                Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                                Al registrar una cuenta, aceptas nuestros <br><a href="../404.html">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
                             </label>
                         </li>
                     </ul>
@@ -76,6 +79,12 @@
 <!-- Fin Navegador  -->
 <!-- Main -->
 <main>
+    <!-- Boton cambio de tema claro - oscuro -->
+    <aside>
+        <button type="button" data-theme-toogle aria-label="Change to dark theme">
+            <img  src="../assets/icons/light_mode.svg" alt="theme-selection">
+        </button>
+    </aside>
     <section class="container01">
         <article class="textos">
             <h1>La Catedral de la Luz</h1>

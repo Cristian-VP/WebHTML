@@ -20,7 +20,6 @@ const errorUser = document.getElementById('user-error');
         errorEmail.style.display = "none";
         emailInput.style.border = "";
 
-        if(!input) {return false;}
         // Valido su longitud
         if(value.length  < 10 || value.length > 60) {
             errorEmail.style.display = "block";
@@ -44,7 +43,6 @@ const errorUser = document.getElementById('user-error');
         errorUser.style.display = "none";
         userInput.style.border = "";
 
-        if(!input) { return false; }
         // Valido su longitud
         if(value.length  < 4 || value.length > 10) {
             errorUser.style.display = "block";
@@ -69,8 +67,6 @@ const errorUser = document.getElementById('user-error');
         errorPassword.style.display = "none";
         passwordInput.style.border = "";
 
-
-        if(!input) { return false; }
         // Valido la longitud mínima
         if(value.length  < 8 || value.length > 15) {
             errorPassword.style.display = "block";

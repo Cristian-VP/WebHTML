@@ -1,5 +1,7 @@
-import {formValidator} from "./components/form_register.js";
+import {formValidator} from "./components/formRegister.js";
+import("./components/darkMode.js");
 
+// Llamada a la función formValidator() por cada input del formulario
 const emailInput = document.getElementById('email');
 const userInput = document.getElementById('user');
 const passwordInput = document.getElementById('password');
@@ -13,5 +15,6 @@ userInput.addEventListener('input', ()=>{
 passwordInput.addEventListener('input', () => {
     formValidator();
 });
+//Fin llamadas formValidator()
 
-//userInput.addEventListener('input', formValidator);*/
+

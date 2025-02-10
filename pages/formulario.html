@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" dir="ltr" data-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,9 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Import iconos de Fontawesome  -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
+    <!-- Script -->
+    <script type="module" src="../js/main.js"></script>
     <title>Formulario</title>
 </head>
 <body class="Cuerpo">
+<!-- Navegador -->
     <header>
         <nav>
             <div id="logo-container">
@@ -31,11 +34,47 @@
             <!-- Menú -->
             <div id="pages-container" >
                 <ul class="menu-container">
-                    <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
-                    <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
-                    <li><a href="#services" target="_self">CONOCENOS</a></li>
+                    <li id="arrow-home"><a href="#" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                    <li><a href="../pages/descubre.html" target="_self">DESCUBRE</a></li>
+                    <li><a href="../pages/formulario.html" target="_self">CONTÁCTA</a></li>
+                    <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGISTRATE</a></li>
                 </ul>
             </div>
+            <dialog id="register-container">
+                <div id="close-register">
+                    <button  onclick="document.getElementById('register-container').close()"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
+                </div>
+                <form id="form-register" action="../index.html" method="dialog">
+                    <fieldset>
+                        <legend>DE NORTE A SUR</legend>
+                        <ul>
+                            <li>
+                                <label class="field-user" for="email">
+                                    <input type="email" name="email" id="email" placeholder="   &#xf0e0;   nombre@mail.dominio" minlength="16" maxlength="60" autofocus>
+                                    <span id="email-error"></span>
+                                </label>
+                                <label class="field-user" for="user">
+                                    <input type="text" name="user" id="user" placeholder="   &#xf007;   myuser | my.user87" minlength="4" maxlength="10">
+                                    <span id="user-error"></span>
+                                </label>
+                                <label class="field-user" for="password">
+                                    <input type="password" name="password" id="password" placeholder="   &#xf084;    ?mi1PAsS78%" minlength="8" maxlength="15">
+                                    <span id ="password-error"></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="chk-condiciones">
+                                    <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
+                                    Al registrar una cuenta, aceptas nuestros <br><a href="../404.html">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <div>
+                        <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post" disabled>REGÍSTRATE</button>
+                    </div>
+                </form>
+            </dialog>
         </nav>
     </header>
 <section>
