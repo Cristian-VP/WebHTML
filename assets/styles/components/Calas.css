@@ -24,13 +24,13 @@
     max-width: 350px; /* Limitamos el tamaño de la imagen */
     height: auto; /* Ajusta la altura proporcionalmente */
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px var(--box-shadow);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .block img:hover {
     transform: scale(1.05); /* Efecto suave de aumento */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 20px var(--box-shadow_hover);
 }
 
 /* Texto */
@@ -44,23 +44,23 @@
 
 .block .textos h1 {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--color-font);
     margin: 0;
 }
 
 .block .textos p {
     font-size: 1rem;
-    color: #555;
+    color: var(--color-font);
     margin: 0;
     line-height: 1.5;
 }
 
 /* Línea divisoria */
 .line {
-    width: 100%;
+    width: 82%;
     height: 2px;
-    background-color: #ddd;
-    margin: 2rem 0;
+    background-color: var(--color-font);
+    margin: 2rem auto;
 }
 
 /* Responsividad */

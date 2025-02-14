@@ -1,8 +1,4 @@
-@import url("components/header.css");
-@import url("components/footer.css");
-
-
-/* Utilizamos un display flex para alinear y distribuir los elementos 
+/* Utilizamos un display flex para alinear y distribuir los elementos
 dentro de un contenedor de manera eficiente, align-items para centrar
 mejor todo el contenido dentro de este, padding y margin para mejorar
 la ubicación de todo el conenedor */
@@ -22,7 +18,7 @@ border-radius para darle un estilo diferente a nuestras imagenes*/
 .container01 img {
     width: 34rem;
     height: 40rem;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0 1px 10px var(--box-shadow);
     border-radius: 90px 0 90px 0;
 }
 
@@ -31,7 +27,7 @@ de movimiento y color al parsar el cursos por encima de esta, tambien
 un ligero estilo a dicho cursor */
 
 .container01 img:hover {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 4);
+    box-shadow: 5px 5px 10px var(--box-shadow_hover);
     transform: translateY(-3%);
     transition: all 400ms ease;
     cursor: pointer;
@@ -62,7 +58,7 @@ la hubicación de estey un tamaño más atractivo*/
 
 .line {
     padding: 1px;
-    background-color: #363636;
+    background-color: var(--color-font);
 }
 
 /*De aquí en adelante utilizamos @media para ajustar la página web a diferentes tamaños

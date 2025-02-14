@@ -1,37 +1,22 @@
-/*:root{
-    --primary: #F8F5EE;
-    --color-text-general: black;
-    --color-green-letter: #DDFB32;
-    --color-white: #FFFFFF;
-}*/
-/* Reglas específicas generales a document del modo claro
- light.css
---icon-filter_hover: invert(60%);
-*/
+/* Reglas específicas generales a document del modo claro*/
 [data-theme = "light"] {
     --color-bck: rgb(248, 245, 238);
     --color-font : rgb(5, 5, 5);
     --icon-filter: invert(0%);
     --icon-filter_hover: invert(80%);
+    --box-shadow: rgba(5, 5, 5, 0.3);
+    --box-shadow_hover:rgba(5, 5, 5, 0.25);
 }
 
 /* Reglas específicas generales a document del modo oscuro */
-
-/*
- dark.css
---icon-filter: invert(100%);
---icon-filter_hover: invert(40%);
-
-img[src*='.svg'] {
-    filter: var(--icon-filter);
-}
-*/
 [data-theme = "dark"] {
     --color-bck: rgb(5, 5, 5);
     --color-font : rgb(248, 245, 238);
     --image-filter: grayscale(50%);
     --icon-filter : invert(1);
     --icon-filter_hover: invert(80%);
+    --box-shadow: rgba(248, 245, 238, 0.3);
+    --box-shadow_hover:rgba(248, 245, 238, 0.25);
 }
 
 /* Boton dark_mode */
