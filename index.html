@@ -27,7 +27,7 @@
             <a href="index.html" title="Ir al inicio">NORTE A SUR</a>
         </div>
         <!-- Menú hamburguesa -->
-        <button class="hamburger" onclick="this.classList.toggle('active')">
+        <button class="hamburger">
             <span></span>
             <span></span>
             <span></span>
@@ -38,12 +38,12 @@
                 <li id="arrow-home"><a href="#" target="_top"><img src="assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
                 <li><a href="pages/descubre.html" target="_self">DESCUBRE</a></li>
                 <li><a href="pages/formulario.html" target="_self">CONTÁCTA</a></li>
-                <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGISTRATE</a></li>
+                <li><a href="#" target="_self">REGISTRATE</a></li>
             </ul>
         </div>
         <dialog id="register-container">
             <div id="close-register">
-                <button  onclick="document.getElementById('register-container').close()"><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
+                <button><i class="fa-regular fa-circle-xmark fa-3x"></i></button>
             </div>
             <form id="form-register" action="index.html" method="dialog">
                 <fieldset>

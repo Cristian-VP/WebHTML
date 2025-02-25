@@ -1,16 +1,14 @@
 // Actualización del tema en el localStorage cuando se recarga la página
 localStorage.getItem("theme");
-//localStorage.setItem("theme", newtheme);
-//const systemSettingsDark = window.matchMedia('(prefers-color-scheme: dark)');
+
 
 //Funcion que devolverá el estado del tema actual
 function calculateSettingTheme ({localStorageTheme, systemSettingsDark}) {
-    //LocalStorage nos retornará el tema de la sesion
-    //console.log("Entro");
+    //LocalStorage nos retornará el tema de la sesión
     if(localStorageTheme !== null){
         return localStorageTheme;
     }
-    //System nos retornará el color-scheme que el usuario tiene por defecto en el SO ó en el navegador
+    //System nos retornará el color-scheme que el usuario tiene por defecto en su Sistema Operativo o en el Navegador
     if(systemSettingsDark.matches){
         //console.log("Entro en dark");
         console.log(systemSettingsDark.matches);
@@ -21,10 +19,11 @@ function calculateSettingTheme ({localStorageTheme, systemSettingsDark}) {
 }
 
 const localStorageTheme = localStorage.getItem("theme");
-//console.log(localStorageTheme);
+
 const systemSettingsDark = window.matchMedia('(prefers-color-scheme: dark)');
 let currentThemeSetting = calculateSettingTheme({localStorageTheme, systemSettingsDark});
 console.log(systemSettingsDark);
+
 //Si window.matchMedia || localStorage tiene algún valor damos al data-theme de <html> su valor
 if(currentThemeSetting === "dark"){
     document.querySelector("html").setAttribute("data-theme", 'dark');
