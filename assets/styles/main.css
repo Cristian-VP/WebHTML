@@ -73,7 +73,11 @@ video {
     flex-direction: row-reverse;
     margin-top: 4em;
 }
+/*Highlight reglas específicas */
 
+.highlight {
+    background-color: lightblue;
+}
 #encuentra-container picture{
     background-image: url('../images/home_page/cala-home-descubre.jpg');
     background-repeat: no-repeat;
@@ -223,8 +227,12 @@ video {
                font-size: 1rem;
 
             }
+            
+            
         }
+        
     }
+
 
 
 

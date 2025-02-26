@@ -40,7 +40,19 @@ import("./components/darkMode.js");
         document.getElementById('register-container').close();
     })
     
+    // Fin 2.2
+
+// FIN MOSTRAR/OCULTAR
+
+//RESALTAR PÁRRAFO
+const paragraph = document.getElementById("esmasque");
+paragraph.addEventListener('mouseover', function () {
     
 
-    // Fin 2.2
-// FIN MOSTRAR/OCULTAR
+     // Verifica si el elemento existe
+         
+            paragraph.classList.toggle("highlight");
+        // Si existe, añade o elimina la clase "highlight"
+    
+});
+//FIN RESALTAR PÁRRAFO
