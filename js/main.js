@@ -1,7 +1,7 @@
 import {formValidator} from "./components/formRegister.js";
 // 3. CAMBIO MODO CLARO/OSCURO
 import("./components/darkMode.js");
-
+import("./components/resaltarParrafo.js")
 
 // 8. VALIDACIÓN FORMULARIO REGISTRO USUARIO
     const emailInput = document.getElementById('email');
