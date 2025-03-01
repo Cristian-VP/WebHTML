@@ -2,9 +2,40 @@
 .Cuerpo {
     display: flex;
     justify-content:space-evenly;
-    padding: 60px;
-} 
+    padding: 100px;
+    } 
 .Reglas{
     border-radius: 30px;
     border-bottom: 30px;
+}
+
+.cuerpo2 {
+    display: flex;
+    justify-content:space-evenly;
+    align-self: flex-end; /* Añadir esta línea */
+}
+
+@media (max-width: 1024px){
+    .Cuerpo {
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+    }
+    .Cuerpo img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+    .Cuerpo p {
+        padding: 0;
+        font-size: 1rem;
+    }
+    .textos h1 {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+
 }
