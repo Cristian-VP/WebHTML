@@ -56,3 +56,28 @@ paragraph.addEventListener('mouseover', function () {
     
 });
 //FIN RESALTAR PÁRRAFO
+document.addEventListener("DOMContentLoaded", () => {
+    const paragraph = document.getElementById("esmasque");
+    const rotateButton = document.getElementById("rotate-button");
+
+    rotateButton.addEventListener("click", () => {
+        paragraph.classList.add("rotate");
+
+        // Remover la clase después de la animación para poder repetirla
+        setTimeout(() => {
+            paragraph.classList.remove("rotate");
+        }, 1000);
+    });
+});
+//FIN ROTAR PÁRRAFO
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("myVideo");
+
+    video.addEventListener("click", () => {
+        video.classList.toggle("shrink");
+    });
+});
+//FIN REDUCIR VÍDEO
+
+
+
