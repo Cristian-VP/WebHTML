@@ -1,6 +1,7 @@
 import {formValidator} from "./components/formRegister.js";
 // 3. CAMBIO MODO CLARO/OSCURO
 import("./components/darkMode.js");
+import("./components/contarVisitas.js");
 
 
 // 8. VALIDACIÓN FORMULARIO REGISTRO USUARIO

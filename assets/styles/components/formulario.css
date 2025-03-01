@@ -2,15 +2,8 @@
 .Cuerpo {
     display: flex;
     justify-content:space-evenly;
-<<<<<<< HEAD
     padding: 60px;
 } 
-=======
-    padding: 20px;
-}
-
-
->>>>>>> e1071d19ebcceadee2a12bc828b086a614feaccc
 .Reglas{
     border-radius: 30px;
     border-bottom: 30px;

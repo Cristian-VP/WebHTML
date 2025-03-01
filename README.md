@@ -98,3 +98,18 @@ La regEx limita la siguiente estructura: [carácter alfanumérica ó barra baja 
     type="password" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$"
 
 La regEx limita la siguiente estructura, haciendo uso de tres LookAhead positivos definidos entre (): (nos asegura que después de cualquier carácter haya una letra)(nos asegura que después de cualquier carácter haya un carácter especial)(nos asegura que después de cualquier carácter haya un número){palabra de mínimo de 8 carácteres}
+
+
+Tabla de Tareas
+
+| Integrantes | Tareas Realizadas | Tiempo Dedicado | Descripcion del Trabajo                               |
+|:-----------:|:-----------------:|:---------------:|:-----------------------------------------------------:|
+| Cris        | Ejercicio 2       | 5h              | Funcion de luz y oscuro                               |
+| Cris        | Ejercicio 3       | 5h              | Boton para implementar dicha funcion                  |
+| Cris        | Ejercicio 8       | 10h             | Validacion de formularios utilizando javascrip        |
+| Sebas       | Ejercicio 5       | 8h              | Cambiar los estilos de los elementos al interactuar   |
+| Sebas       | Ejercicio 6       | 9h              | Crear un baner                                        |
+| Sebas       | Ejercicio 7       | 7h              | Mostrar imagenes en miniatura y que se Amplien        |
+| Abi         | Ejercicio 1       | 10              | Definir una estructura de datos con javascrip         |
+| Abi         | Ejercicio 4       | 7h              | Añadir un boton para ver una lista de los comentarios |
+| Abi         | Ejercicio 9       | 4h              | Modificar el Readme como se pide                      |

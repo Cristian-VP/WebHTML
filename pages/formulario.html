@@ -14,16 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Import iconos de Fontawesome  -->
     <script src="https://kit.fontawesome.com/5cf738cd42.js" crossorigin="anonymous"></script>
-    <!-- Script -->
-    <script type="module" src="../js/main.js"></script>
     <title>Formulario</title>
 </head>
-<body class="Cuerpo">
-<!-- Navegador -->
+<body>
     <header>
         <nav>
             <div id="logo-container">
-                <a href="descubre.html" title="Ir al inicio">DE NORTE A SUR</a>
+                <a href="../index.html" title="Ir al inicio">DE NORTE A SUR</a>
             </div>
             <!-- Menú hamburguesa -->
             <button class="hamburger" onclick="this.classList.toggle('active')">
@@ -34,9 +31,9 @@
             <!-- Menú -->
             <div id="pages-container" >
                 <ul class="menu-container">
-                    <li id="arrow-home"><a href="#" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
-                    <li><a href="../pages/descubre.html" target="_self">DESCUBRE</a></li>
-                    <li><a href="../pages/formulario.html" target="_self">CONTÁCTA</a></li>
+                    <li id="arrow-home"><a href="../index.html" target="_top"><img src="../assets/icons/arrow-up-solid.svg" alt="Go back to Home"></a></li>
+                    <li><a href="descubre.html" target="_self">DESCUBRE</a></li>
+                    <li><a href="formulario.html" target="_self">CONTÁCTA</a></li>
                     <li><a href="#" target="_self" onclick="document.getElementById('register-container').showModal()">REGISTRATE</a></li>
                 </ul>
             </div>
@@ -50,41 +47,44 @@
                         <ul>
                             <li>
                                 <label class="field-user" for="email">
-                                    <input type="email" name="email" id="email" placeholder="   &#xf0e0;   nombre@mail.dominio" minlength="16" maxlength="60" autofocus>
-                                    <span id="email-error"></span>
+                                    <input type="email" name="email" id="email"  placeholder="   &#xf0e0;   EMAIL" minlength="16" maxlength="60" pattern="^[\w.-]{3,30}@[a-z]{3,30}\.[a-z]{2,3}$" autofocus required>
                                 </label>
                                 <label class="field-user" for="user">
-                                    <input type="text" name="user" id="user" placeholder="   &#xf007;   myuser | my.user87" minlength="4" maxlength="10">
-                                    <span id="user-error"></span>
+                                    <input type="text" name="user" id="user" placeholder="   &#xf007;   USER" minlength="4" maxlength="10" pattern="^[\w.-]{4,10}$" required>
                                 </label>
                                 <label class="field-user" for="password">
-                                    <input type="password" name="password" id="password" placeholder="   &#xf084;    ?mi1PAsS78%" minlength="8" maxlength="15">
-                                    <span id ="password-error"></span>
+                                    <input type="password" name="password" id="password" placeholder="   &#xf084;    PASSWORD" minlength="8" maxlength="15" pattern="^(?=.*[A-Za-z])(?=.*\W)(?=.*\d).{8,}$" required>
                                 </label>
                             </li>
                             <li>
                                 <label for="chk-condiciones">
                                     <input type="checkbox" name="condiciones" id="chk-condiciones" value="true" hidden>
-                                    Al registrar una cuenta, aceptas nuestros <br><a href="../404.html">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
+                                    Al registrar una cuenta, aceptas nuestros <br><a href="#">Condiciones de servicio y Política de<br> privacidad y cookies.</a>
                                 </label>
                             </li>
                         </ul>
                     </fieldset>
                     <div>
-                        <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post" disabled>REGÍSTRATE</button>
+                        <button type="submit" id="register-button" form="form-register" onclick="document.getElementById('chk-condiciones').setAttribute('checked', 'true')" formmethod="post">REGÍSTRATE</button>
                     </div>
                 </form>
             </dialog>
         </nav>
     </header>
-<section>
+<main>
+    <aside>
+        <button type="button" data-theme-toogle aria-label="Change to dark theme">
+            <img  src="../assets/icons/light_mode.svg" alt="theme-selection">
+        </button>
+    </aside>
+<section class="cuerpo">
     <form name="miformulario" id="miformulario" method="get" autocomplete="off">
         <label for="Nombre">Nombre</label><br>
-        <input type="text" name="Nombre" class="Reglas" placeholder="Nombre" required><br><br>
+        <input type="text" name="Nombre" class="Reglas" placeholder=" Nombre" required><br><br>
         <label for="Correo">Correo</label><br>
-        <input type="email" name="Correo" class="Reglas" placeholder="Email" required><br><br>
+        <input type="email" name="Correo" class="Reglas" placeholder=" Email" required><br><br>
         <label for="Telefono">Telefono </label><br>
-        <input type="tel" name="Telefono" class="Reglas" placeholder="Telefono" required><br><br>
+        <input type="tel" name="Telefono" class="Reglas" placeholder=" Telefono" required><br><br>
         <label for="mallorca" placeholder="Selecciona Uno">Selecciona Destino</label><br>
         <select class="Reglas" name="mallorca" required>
             <option value=""disabled selected>-- Elige una opción --</option>
@@ -95,33 +95,58 @@
         <label for="comentarios">Comentarios:</label><br>
         <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
 
-        <input type="reset" value="Reinicia" class="Reglas">
-        <input type="submit" value="Contacta" class="Reglas">
+        <input type="reset" value="  Reinicia  " class="Reglas">
+        <input type="submit" value="  Contacta  " class="Reglas">
     </form>
 </section>
-<section>
+<section class="cuerpo2">
     <h4 name="titulo" class="titulo">SI QUIERES CONOCER</h4>
     <h1 name="titulo" class="titulo">MALLLORCA <br> DE NORTE <br> A SUR</h1>
 </section>
-        <!-- Redes sociales -->
-        <div id="redes-footer">
-            <p><strong>Encuentranos en:</strong></p>
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
-                </li>
-            </ul>
+</main>
+<footer>
+    <!-- Contacto de la empresa -->
+    <address>
+        <div id="empresa-footer">
+            <p>
+                <em>DE NORTE A SUR</em>
+            </p>
+            <p>
+                <strong><i>haz algo increible</i></strong>
+            </p>
         </div>
-    </footer>
+        <ul id="contacto-footer">
+            <li>
+                <a id="mail" href="mailto:info@nortesur.es" target="_blank"><i class="fa-solid fa-envelope fa-xl"></i>Contact us</a>
+            </li>
+            <li>
+                <a id="phone" href="tel:+633548978" target="_blank"><i class="fa-solid fa-phone fa-xl"></i>Call us</a>
+            </li>
+            <li>
+                <a id="localitation" href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x129793b01716a01b:0x55bc574de040df4a%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111&ved=2ahUKEwittbPCke6JAxVHTaQEHY_NCrIQ4kB6BAg-EAM&usg=AOvVaw2FU91ag2-M24lRvROwiYyQ"><i class="fa-solid fa-location-dot fa-xl"></i>Find us</a>
+            </li>
+        </ul>
+    </address>
+    <!-- Redes sociales -->
+    <div id="redes-footer">
+        <p><strong>Encuentranos en:</strong></p>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/cifpfbmoll/" target="_blank"><i class="fa-brands fa-instagram fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/colegiofrancescborjamoll/" target="_blank"><i class="fa-brands fa-facebook fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok fa-3x"></i></a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCDHJfVG0Epk_BUqaPwuTGzA" target="_blank"><i class="fa-brands fa-youtube fa-3x"></i></a>
+            </li>
+        </ul>
+    </div>
+</footer>
 <!-- Fin Footer -->
 </body>
+<script type="module" src="../js/main.js"></script>
 </html>
