@@ -3,7 +3,6 @@ import {formValidator} from "./components/formRegister.js";
 import("./components/darkMode.js");
 import("./components/contarVisitas.js");
 
-
 // 8. VALIDACIÓN FORMULARIO REGISTRO USUARIO
     const emailInput = document.getElementById('email');
     const userInput = document.getElementById('user');
@@ -41,6 +40,45 @@ import("./components/contarVisitas.js");
     registerButtonClose.addEventListener('click', ()=>{
         document.getElementById('register-container').close();
     })
-
+    
     // Fin 2.2
+
 // FIN MOSTRAR/OCULTAR
+
+//RESALTAR PÁRRAFO
+const paragraph = document.getElementById("esmasque");
+paragraph.addEventListener('mouseover', function () {
+    
+
+     // Verifica si el elemento existe
+         
+            paragraph.classList.toggle("highlight");
+        // Si existe, añade o elimina la clase "highlight"
+    
+});
+//FIN RESALTAR PÁRRAFO
+document.addEventListener("DOMContentLoaded", () => {
+    const paragraph = document.getElementById("esmasque");
+    const rotateButton = document.getElementById("rotate-button");
+
+    rotateButton.addEventListener("click", () => {
+        paragraph.classList.add("rotate");
+
+        // Remover la clase después de la animación para poder repetirla
+        setTimeout(() => {
+            paragraph.classList.remove("rotate");
+        }, 1000);
+    });
+});
+//FIN ROTAR PÁRRAFO
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("myVideo");
+
+    video.addEventListener("click", () => {
+        video.classList.toggle("shrink");
+    });
+});
+//FIN REDUCIR VÍDEO
+
+
+
